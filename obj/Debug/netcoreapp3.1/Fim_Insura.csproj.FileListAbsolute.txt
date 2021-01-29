@@ -14,3 +14,6 @@ D:\Platform Design\web mockup\www\FimKG\Fim_Insura\obj\Debug\netcoreapp3.1\Fim_I
 D:\Platform Design\web mockup\www\FimKG\Fim_Insura\obj\Debug\netcoreapp3.1\Fim_Insura.dll
 D:\Platform Design\web mockup\www\FimKG\Fim_Insura\obj\Debug\netcoreapp3.1\Fim_Insura.pdb
 D:\Platform Design\web mockup\www\FimKG\Fim_Insura\obj\Debug\netcoreapp3.1\Fim_Insura.genruntimeconfig.cache
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\obj\Debug\netcoreapp3.1\Fim_Insura.login.resources
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\obj\Debug\netcoreapp3.1\Fim_Insura.main.resources
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\obj\Debug\netcoreapp3.1\Fim_Insura.register.resources
