@@ -30,35 +30,35 @@ namespace Fim_Insura
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(login));
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblClose = new System.Windows.Forms.Label();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnLogin = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnRegister = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // lblClose
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label1.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(762, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(28, 27);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "X";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.lblClose.AutoSize = true;
+            this.lblClose.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.lblClose.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblClose.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblClose.Location = new System.Drawing.Point(760, 10);
+            this.lblClose.Name = "lblClose";
+            this.lblClose.Size = new System.Drawing.Size(28, 27);
+            this.lblClose.TabIndex = 0;
+            this.lblClose.Text = "X";
+            this.lblClose.Click += new System.EventHandler(this.lblClose_Click);
             // 
             // txtUsername
             // 
-            this.txtUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(198)))), ((int)(((byte)(93)))));
+            this.txtUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
             this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUsername.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtUsername.Location = new System.Drawing.Point(367, 95);
@@ -79,25 +79,25 @@ namespace Fim_Insura
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(59, 171);
+            this.pictureBox1.Location = new System.Drawing.Point(35, 140);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(172, 101);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
-            // button1
+            // btnLogin
             // 
-            this.button1.BackColor = System.Drawing.Color.Maroon;
-            this.button1.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(367, 208);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(106, 34);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Login";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
+            this.btnLogin.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnLogin.ForeColor = System.Drawing.Color.White;
+            this.btnLogin.Location = new System.Drawing.Point(367, 208);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(106, 34);
+            this.btnLogin.TabIndex = 4;
+            this.btnLogin.Text = "Login";
+            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // panel2
             // 
@@ -109,7 +109,7 @@ namespace Fim_Insura
             // 
             // txtPassword
             // 
-            this.txtPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(198)))), ((int)(((byte)(93)))));
+            this.txtPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPassword.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtPassword.Location = new System.Drawing.Point(367, 142);
@@ -122,24 +122,27 @@ namespace Fim_Insura
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Cursor = System.Windows.Forms.Cursors.No;
             this.label2.Font = new System.Drawing.Font("Verdana", 32.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(59, 86);
+            this.label2.Location = new System.Drawing.Point(35, 55);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(253, 52);
             this.label2.TabIndex = 5;
             this.label2.Text = "FIM Insura";
             // 
-            // button2
+            // btnRegister
             // 
-            this.button2.BackColor = System.Drawing.Color.Maroon;
-            this.button2.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(541, 208);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(106, 34);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Register";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
+            this.btnRegister.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnRegister.ForeColor = System.Drawing.Color.White;
+            this.btnRegister.Location = new System.Drawing.Point(541, 208);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Size = new System.Drawing.Size(106, 34);
+            this.btnRegister.TabIndex = 4;
+            this.btnRegister.Text = "Register";
+            this.btnRegister.UseVisualStyleBackColor = false;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // login
             // 
@@ -152,12 +155,12 @@ namespace Fim_Insura
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnRegister);
+            this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtUsername);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblClose);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -172,14 +175,14 @@ namespace Fim_Insura
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblClose;
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnRegister;
     }
 }

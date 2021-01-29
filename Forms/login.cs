@@ -10,12 +10,13 @@ namespace Fim_Insura
 {
     public partial class login : Form
     {
+        register regFrm = new register();
         public login()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void lblClose_Click(object sender, EventArgs e)
         {
             this.Close();
         }
@@ -34,9 +35,14 @@ namespace Fim_Insura
             panel2.ForeColor = Color.FromArgb(20, 155, 163);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            regFrm.Show();
         }
     }
 }
