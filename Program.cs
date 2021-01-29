@@ -17,7 +17,8 @@ namespace Fim_Insura
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Splash());
+            //Application.Run(new splash());
+            Application.Run(new login());
         }
     }
 }

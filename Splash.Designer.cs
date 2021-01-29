@@ -1,7 +1,7 @@
 ﻿
 namespace Fim_Insura
 {
-    partial class Splash
+    partial class splash
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,7 +29,7 @@ namespace Fim_Insura
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Splash));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(splash));
             this.splashImg = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.splashImg)).BeginInit();
             this.SuspendLayout();
@@ -43,14 +43,14 @@ namespace Fim_Insura
             this.splashImg.TabIndex = 0;
             this.splashImg.TabStop = false;
             // 
-            // Splash
+            // splash
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(500, 250);
             this.Controls.Add(this.splashImg);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Splash";
+            this.Name = "splash";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Splash";
             ((System.ComponentModel.ISupportInitialize)(this.splashImg)).EndInit();
