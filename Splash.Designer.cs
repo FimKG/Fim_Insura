@@ -29,8 +29,10 @@ namespace Fim_Insura
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(splash));
             this.splashImg = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.splashImg)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,6 +44,10 @@ namespace Fim_Insura
             this.splashImg.Size = new System.Drawing.Size(500, 250);
             this.splashImg.TabIndex = 0;
             this.splashImg.TabStop = false;
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 10;
             // 
             // splash
             // 
@@ -61,6 +67,7 @@ namespace Fim_Insura
         #endregion
 
         private System.Windows.Forms.PictureBox splashImg;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

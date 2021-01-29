@@ -31,12 +31,12 @@ namespace Fim_Insura
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(login));
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtUsername = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -56,15 +56,17 @@ namespace Fim_Insura
             this.label1.Text = "X";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox1
+            // txtUsername
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(198)))), ((int)(((byte)(93)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Location = new System.Drawing.Point(367, 102);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(280, 16);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "Username or Email";
+            this.txtUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(198)))), ((int)(((byte)(93)))));
+            this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtUsername.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtUsername.Location = new System.Drawing.Point(367, 95);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(280, 24);
+            this.txtUsername.TabIndex = 1;
+            this.txtUsername.Text = "Username or Email";
+            this.txtUsername.Click += new System.EventHandler(this.txtUsername_Click);
             // 
             // panel1
             // 
@@ -95,6 +97,7 @@ namespace Fim_Insura
             this.button1.TabIndex = 4;
             this.button1.Text = "Login";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel2
             // 
@@ -104,15 +107,17 @@ namespace Fim_Insura
             this.panel2.Size = new System.Drawing.Size(280, 1);
             this.panel2.TabIndex = 4;
             // 
-            // textBox2
+            // txtPassword
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(198)))), ((int)(((byte)(93)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Location = new System.Drawing.Point(367, 149);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(280, 16);
-            this.textBox2.TabIndex = 3;
-            this.textBox2.Text = "Password";
+            this.txtPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(198)))), ((int)(((byte)(93)))));
+            this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPassword.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtPassword.Location = new System.Drawing.Point(367, 142);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(280, 24);
+            this.txtPassword.TabIndex = 3;
+            this.txtPassword.Text = "Password";
+            this.txtPassword.Click += new System.EventHandler(this.txtPassword_Click);
             // 
             // label2
             // 
@@ -146,12 +151,12 @@ namespace Fim_Insura
             this.ClientSize = new System.Drawing.Size(800, 400);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -168,12 +173,12 @@ namespace Fim_Insura
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button2;
     }

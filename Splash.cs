@@ -15,6 +15,7 @@ namespace Fim_Insura
         public splash()
         {
             InitializeComponent();
+            timer1.Start();
         }
 
     }
