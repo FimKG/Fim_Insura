@@ -1,0 +1,16 @@
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\bin\Debug\netcoreapp3.1\Fim_Insura.exe
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\bin\Debug\netcoreapp3.1\Fim_Insura.deps.json
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\bin\Debug\netcoreapp3.1\Fim_Insura.runtimeconfig.json
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\bin\Debug\netcoreapp3.1\Fim_Insura.runtimeconfig.dev.json
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\bin\Debug\netcoreapp3.1\Fim_Insura.dll
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\bin\Debug\netcoreapp3.1\Fim_Insura.pdb
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\obj\Debug\netcoreapp3.1\Fim_Insura.csprojAssemblyReference.cache
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\obj\Debug\netcoreapp3.1\Fim_Insura.Properties.Resources.resources
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\obj\Debug\netcoreapp3.1\Fim_Insura.Splash.resources
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\obj\Debug\netcoreapp3.1\Fim_Insura.csproj.GenerateResource.cache
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\obj\Debug\netcoreapp3.1\Fim_Insura.AssemblyInfoInputs.cache
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\obj\Debug\netcoreapp3.1\Fim_Insura.AssemblyInfo.cs
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\obj\Debug\netcoreapp3.1\Fim_Insura.csproj.CoreCompileInputs.cache
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\obj\Debug\netcoreapp3.1\Fim_Insura.dll
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\obj\Debug\netcoreapp3.1\Fim_Insura.pdb
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\obj\Debug\netcoreapp3.1\Fim_Insura.genruntimeconfig.cache
