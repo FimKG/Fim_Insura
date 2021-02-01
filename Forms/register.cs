@@ -11,6 +11,7 @@ namespace Fim_Insura
     public partial class register : Form
     {
         //login loginFrm = new login();
+        admin_Main admin = new admin_Main();
         public register()
         {
             InitializeComponent();
@@ -64,7 +65,7 @@ namespace Fim_Insura
         {
             if(cbCondition.Checked == true)
             {
-
+                admin.Show();
             }
             else
             {
@@ -72,5 +73,9 @@ namespace Fim_Insura
             }
         }
 
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
