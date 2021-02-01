@@ -1,3 +1,4 @@
+using Fim_Insura.Forms;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,9 +19,15 @@ namespace Fim_Insura
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new splash());
-            //Application.Run(new login()); 
             //Application.Run(new register());
-            Application.Run(new main());
+            //Application.Run(new policyType());
+            //Application.Run(new myPolicy());
+            //Application.Run(new manage_Client());
+            //Application.Run(new login());
+            Application.Run(new landing());
+            //Application.Run(new client_Main());
+            //Application.Run(new client_login());
+            //Application.Run(new admin_Main());
         }
     }
 }

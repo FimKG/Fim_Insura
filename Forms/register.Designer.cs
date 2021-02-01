@@ -85,6 +85,7 @@ namespace Fim_Insura
             this.btnLogin.TabIndex = 13;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // pictureBox1
             // 
@@ -212,12 +213,11 @@ namespace Fim_Insura
             // 
             // cbCondition
             // 
-            this.cbCondition.AutoSize = true;
             this.cbCondition.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.cbCondition.Font = new System.Drawing.Font("Verdana", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cbCondition.Location = new System.Drawing.Point(343, 256);
             this.cbCondition.Name = "cbCondition";
-            this.cbCondition.Size = new System.Drawing.Size(25, 13);
+            this.cbCondition.Size = new System.Drawing.Size(35, 35);
             this.cbCondition.TabIndex = 15;
             this.cbCondition.UseVisualStyleBackColor = true;
             this.cbCondition.MouseCaptureChanged += new System.EventHandler(this.cbCondition_MouseCaptureChanged);

@@ -6,16 +6,15 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Fim_Insura
+namespace Fim_Insura.Forms
 {
-    public partial class login : Form
+    public partial class client_login : Form
     {
-        register admin = new register();
-        public login()
+        policyTypeReg regFrm = new policyTypeReg();
+        public client_login()
         {
             InitializeComponent();
         }
-
         private void lblClose_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -42,7 +41,7 @@ namespace Fim_Insura
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            admin.Show();
+            regFrm.Show();
         }
     }
 }
