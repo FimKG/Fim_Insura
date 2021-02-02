@@ -18,6 +18,8 @@ namespace Fim_Insura.Forms
         private void lblClose_Click(object sender, EventArgs e)
         {
             this.Close();
+            landing home = new landing();
+            home.Show();
         }
 
         private void txtUsername_Click(object sender, EventArgs e)
@@ -42,6 +44,7 @@ namespace Fim_Insura.Forms
         private void btnRegister_Click(object sender, EventArgs e)
         {
             regFrm.Show();
+            this.Hide();
         }
     }
 }

@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using Fim_Insura.Forms;
 
 namespace Fim_Insura
 {
@@ -21,6 +22,8 @@ namespace Fim_Insura
         private void lblClose_Click(object sender, EventArgs e)
         {
             this.Close();
+            client_login login = new client_login();
+            login.Show();
         }
 
         private void txtnames_Click(object sender, EventArgs e)
