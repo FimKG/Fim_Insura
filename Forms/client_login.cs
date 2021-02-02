@@ -24,16 +24,16 @@ namespace Fim_Insura.Forms
 
         private void txtUsername_Click(object sender, EventArgs e)
         {
-            txtUsername.Clear();
-            txtUsername.ForeColor = Color.FromArgb(20, 155, 163);
-            panel1.ForeColor = Color.FromArgb(20, 155, 163);
+            //txtUsername.Clear();
+            //txtUsername.ForeColor = Color.FromArgb(20, 155, 163);
+            //panel1.ForeColor = Color.FromArgb(20, 155, 163);
         }
 
         private void txtPassword_Click(object sender, EventArgs e)
         {
-            txtPassword.Clear();
-            txtPassword.ForeColor = Color.FromArgb(20, 155, 163);
-            panel2.ForeColor = Color.FromArgb(20, 155, 163);
+            //txtPassword.Clear();
+            //txtPassword.ForeColor = Color.FromArgb(20, 155, 163);
+            //panel2.ForeColor = Color.FromArgb(20, 155, 163);
         }
 
         private void btnLogin_Click(object sender, EventArgs e)

@@ -64,14 +64,14 @@ namespace Fim_Insura.Forms
             // 
             // txtPassword
             // 
-            this.txtPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
+            this.txtPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPassword.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtPassword.Location = new System.Drawing.Point(367, 142);
             this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PlaceholderText = "Password";
             this.txtPassword.Size = new System.Drawing.Size(280, 24);
             this.txtPassword.TabIndex = 9;
-            this.txtPassword.Text = "Password";
             this.txtPassword.Click += new System.EventHandler(this.txtPassword_Click);
             // 
             // btnRegister
@@ -120,14 +120,14 @@ namespace Fim_Insura.Forms
             // 
             // txtUsername
             // 
-            this.txtUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
+            this.txtUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUsername.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtUsername.Location = new System.Drawing.Point(367, 95);
             this.txtUsername.Name = "txtUsername";
+            this.txtUsername.PlaceholderText = "Username or Email";
             this.txtUsername.Size = new System.Drawing.Size(280, 24);
             this.txtUsername.TabIndex = 7;
-            this.txtUsername.Text = "Username or Email";
             this.txtUsername.Click += new System.EventHandler(this.txtUsername_Click);
             // 
             // lblClose
