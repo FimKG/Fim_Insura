@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Fim_Insura.Forms;
 
 namespace Fim_Insura
 {
@@ -16,10 +17,30 @@ namespace Fim_Insura
         {
             InitializeComponent();
         }
-
-        private void timer1_Tick(object sender, EventArgs e)
+        
+        int startProgress = 0;
+        private void loadingPage_Tick(object sender, EventArgs e)
         {
+            
+            startProgress += 1;
+            progressBar.Value = startProgress;
+
+            if (progressBar.Value == 50)
+            {
+                progressBar.Value = 0;
+                loadingPage.Stop();
+                this.Hide();
+                landing landPage = new landing();
+                landPage.Show();
+
+            }
 
         }
+
+        private void splash_Load(object sender, EventArgs e)
+        {
+            loadingPage.Start();
+        }
+
     }
 }

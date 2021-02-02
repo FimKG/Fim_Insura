@@ -11,7 +11,6 @@ namespace Fim_Insura
     public partial class register : Form
     {
         //login loginFrm = new login();
-        admin_Main admin = new admin_Main();
         public register()
         {
             InitializeComponent();
@@ -20,6 +19,8 @@ namespace Fim_Insura
         private void lblClose_Click(object sender, EventArgs e)
         {
             this.Close();
+            login log = new login();
+            log.Show();
         }
 
         private void txtnames_Click(object sender, EventArgs e)
@@ -63,9 +64,12 @@ namespace Fim_Insura
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            if(cbCondition.Checked == true)
+            admin_Main admin = new admin_Main();
+
+            if (cbCondition.Checked == true)
             {
                 admin.Show();
+                this.Hide();
             }
             else
             {

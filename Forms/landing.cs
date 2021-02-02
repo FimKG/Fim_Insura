@@ -15,24 +15,25 @@ namespace Fim_Insura.Forms
             InitializeComponent();
         }
 
-        //register admin = new register();
-        //policyType client = new policyType();
-        login login = new login();
-        client_login client_login = new client_login();
-
-        private void btnAdmin_Click(object sender, EventArgs e)
-        {
-            login.Show();
-        }
-
-        private void btnClient_Click(object sender, EventArgs e)
-        {
-            client_login.Show();
-        }
-
         private void lblClose_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+
+        private void btnAdmin_Click(object sender, EventArgs e)
+        {
+            login login = new login();
+            login.Show();
+            this.Hide();
+        }
+
+        private void btnClient_Click(object sender, EventArgs e)
+        {
+            client_login client_login = new client_login();
+            client_login.Show();
+            this.Hide();
+        }
+
+
     }
 }

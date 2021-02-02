@@ -5,12 +5,12 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using Fim_Insura.Forms;
 
 namespace Fim_Insura
 {
     public partial class login : Form
     {
-        register admin = new register();
         public login()
         {
             InitializeComponent();
@@ -19,6 +19,8 @@ namespace Fim_Insura
         private void lblClose_Click(object sender, EventArgs e)
         {
             this.Close();
+            landing home = new landing();
+            home.Show();
         }
 
         private void txtUsername_Click(object sender, EventArgs e)
@@ -42,7 +44,9 @@ namespace Fim_Insura
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
+            register admin = new register();
             admin.Show();
+            this.Hide();
         }
     }
 }
