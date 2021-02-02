@@ -29,6 +29,7 @@ namespace Fim_Insura
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(policyTypeReg));
             this.panel_footer = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.panel_header = new System.Windows.Forms.Panel();
@@ -149,7 +150,7 @@ namespace Fim_Insura
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(46)))), ((int)(((byte)(15)))));
-            this.panel5.Location = new System.Drawing.Point(134, 344);
+            this.panel5.Location = new System.Drawing.Point(517, 381);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(280, 1);
             this.panel5.TabIndex = 23;
@@ -157,7 +158,7 @@ namespace Fim_Insura
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(46)))), ((int)(((byte)(15)))));
-            this.panel3.Location = new System.Drawing.Point(134, 308);
+            this.panel3.Location = new System.Drawing.Point(134, 344);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(280, 1);
             this.panel3.TabIndex = 24;
@@ -180,86 +181,87 @@ namespace Fim_Insura
             // 
             // txtCell
             // 
-            this.txtCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
+            this.txtCell.BackColor = System.Drawing.Color.White;
             this.txtCell.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCell.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtCell.Location = new System.Drawing.Point(134, 315);
+            this.txtCell.Location = new System.Drawing.Point(517, 352);
             this.txtCell.Name = "txtCell";
+            this.txtCell.PlaceholderText = "Cellphone";
             this.txtCell.Size = new System.Drawing.Size(280, 24);
             this.txtCell.TabIndex = 18;
-            this.txtCell.Text = "Cellphone";
             this.txtCell.Click += new System.EventHandler(this.txtCell_Click);
             // 
             // txtAddress
             // 
-            this.txtAddress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
+            this.txtAddress.BackColor = System.Drawing.Color.White;
             this.txtAddress.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAddress.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtAddress.Location = new System.Drawing.Point(134, 279);
+            this.txtAddress.Multiline = true;
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(280, 24);
+            this.txtAddress.PlaceholderText = "Address";
+            this.txtAddress.Size = new System.Drawing.Size(280, 59);
             this.txtAddress.TabIndex = 19;
-            this.txtAddress.Text = "Address";
             this.txtAddress.Click += new System.EventHandler(this.txtAddress_Click);
             // 
             // txtnames
             // 
-            this.txtnames.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
+            this.txtnames.BackColor = System.Drawing.Color.White;
             this.txtnames.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtnames.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtnames.Location = new System.Drawing.Point(134, 243);
             this.txtnames.Name = "txtnames";
+            this.txtnames.PlaceholderText = "First Names";
             this.txtnames.Size = new System.Drawing.Size(280, 24);
             this.txtnames.TabIndex = 20;
-            this.txtnames.Text = "First Names";
             this.txtnames.Click += new System.EventHandler(this.txtnames_Click);
             // 
             // txtPolicyPeriod
             // 
-            this.txtPolicyPeriod.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
+            this.txtPolicyPeriod.BackColor = System.Drawing.Color.White;
             this.txtPolicyPeriod.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPolicyPeriod.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtPolicyPeriod.Location = new System.Drawing.Point(134, 352);
             this.txtPolicyPeriod.Name = "txtPolicyPeriod";
+            this.txtPolicyPeriod.PlaceholderText = "Policy Period";
             this.txtPolicyPeriod.Size = new System.Drawing.Size(280, 24);
             this.txtPolicyPeriod.TabIndex = 22;
-            this.txtPolicyPeriod.Text = "Policy Period";
             this.txtPolicyPeriod.Click += new System.EventHandler(this.txtPolicyPeriod_Click);
             // 
             // txtLastName
             // 
-            this.txtLastName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
+            this.txtLastName.BackColor = System.Drawing.Color.White;
             this.txtLastName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtLastName.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtLastName.Location = new System.Drawing.Point(517, 243);
             this.txtLastName.Name = "txtLastName";
+            this.txtLastName.PlaceholderText = "Last Name";
             this.txtLastName.Size = new System.Drawing.Size(280, 24);
             this.txtLastName.TabIndex = 20;
-            this.txtLastName.Text = "Last Name";
             this.txtLastName.Click += new System.EventHandler(this.txtLastName_Click);
             // 
             // txtEmail
             // 
-            this.txtEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
+            this.txtEmail.BackColor = System.Drawing.Color.White;
             this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtEmail.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtEmail.Location = new System.Drawing.Point(517, 279);
             this.txtEmail.Name = "txtEmail";
+            this.txtEmail.PlaceholderText = "Email";
             this.txtEmail.Size = new System.Drawing.Size(280, 24);
             this.txtEmail.TabIndex = 19;
-            this.txtEmail.Text = "Email";
             this.txtEmail.Click += new System.EventHandler(this.txtEmail_Click);
             // 
             // txtDateOfBirth
             // 
-            this.txtDateOfBirth.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
+            this.txtDateOfBirth.BackColor = System.Drawing.Color.White;
             this.txtDateOfBirth.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDateOfBirth.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtDateOfBirth.Location = new System.Drawing.Point(517, 315);
             this.txtDateOfBirth.Name = "txtDateOfBirth";
+            this.txtDateOfBirth.PlaceholderText = "Date Of Birth";
             this.txtDateOfBirth.Size = new System.Drawing.Size(280, 24);
             this.txtDateOfBirth.TabIndex = 18;
-            this.txtDateOfBirth.Text = "Date Of Birth";
             this.txtDateOfBirth.Click += new System.EventHandler(this.txtDateOfBirth_Click);
             // 
             // panel2
@@ -375,10 +377,12 @@ namespace Fim_Insura
             this.lbltotal.Size = new System.Drawing.Size(0, 15);
             this.lbltotal.TabIndex = 32;
             // 
-            // policyType
+            // policyTypeReg
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1000, 580);
             this.Controls.Add(this.lbltotal);
             this.Controls.Add(this.lblPolicy);
@@ -407,8 +411,9 @@ namespace Fim_Insura
             this.Controls.Add(this.txtPolicyPeriod);
             this.Controls.Add(this.panel_footer);
             this.Controls.Add(this.panel_header);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "policyType";
+            this.Name = "policyTypeReg";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Policy Type";
             this.panel_footer.ResumeLayout(false);

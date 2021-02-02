@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "/7zk6onQ0krYm3e2FSk2CJyBtxLNvJaQanqmPVqMDrMxuC30fPwTK8T4rdHt7kGI79KnPP3O+tpE3EU+kjoPkw==",
+  "dgSpecHash": "5IEN7Mjd0ff4C1bHeLxIgYt2edEjhWgw+fI5UmdtxJB9vAoL6+CEHpt0lqw/l5UPXdVUb5loJ06OfrfIk+1Tbw==",
   "success": true,
   "projectFilePath": "D:\\Platform Design\\web mockup\\www\\FimKG\\Fim_Insura\\Fim_Insura.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\KGAUGELO\\.nuget\\packages\\mysqlconnector\\1.2.1\\mysqlconnector.1.2.1.nupkg.sha512"
+  ],
   "logs": []
 }
