@@ -7,6 +7,24 @@
     <Compile Update="Forms\client_login.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\client_Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\InsureProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\review_Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\submit_Claims.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="user_Control\UC_claim.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="user_Control\UC_InsuraPro.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="Forms\landing.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -30,6 +48,12 @@
     </Compile>
     <Compile Update="Forms\splash.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="user_Control\UC_profile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="user_Control\UC_Rv_Product.cs">
+      <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>
 </Project>

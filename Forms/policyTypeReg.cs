@@ -91,7 +91,7 @@ namespace Fim_Insura
         private void btnLogPolicy_Click(object sender, EventArgs e)
         {
             client_Main logPolicy = new client_Main();
-
+            this.Hide();
             logPolicy.Show();
             
         }

@@ -17,7 +17,7 @@ namespace Fim_Insura.Forms
 
         private void lblClose_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void btnAdmin_Click(object sender, EventArgs e)

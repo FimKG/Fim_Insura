@@ -47,7 +47,6 @@ namespace Fim_Insura
             this.txtPolicyPeriod = new System.Windows.Forms.TextBox();
             this.txtLastName = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
-            this.txtDateOfBirth = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -60,6 +59,7 @@ namespace Fim_Insura
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblBirthDate = new System.Windows.Forms.Label();
             this.lbltotal = new System.Windows.Forms.Label();
+            this.DOB = new System.Windows.Forms.DateTimePicker();
             this.panel_footer.SuspendLayout();
             this.panel_header.SuspendLayout();
             this.SuspendLayout();
@@ -252,18 +252,6 @@ namespace Fim_Insura
             this.txtEmail.TabIndex = 19;
             this.txtEmail.Click += new System.EventHandler(this.txtEmail_Click);
             // 
-            // txtDateOfBirth
-            // 
-            this.txtDateOfBirth.BackColor = System.Drawing.Color.White;
-            this.txtDateOfBirth.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtDateOfBirth.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtDateOfBirth.Location = new System.Drawing.Point(517, 315);
-            this.txtDateOfBirth.Name = "txtDateOfBirth";
-            this.txtDateOfBirth.PlaceholderText = "Date Of Birth";
-            this.txtDateOfBirth.Size = new System.Drawing.Size(280, 24);
-            this.txtDateOfBirth.TabIndex = 18;
-            this.txtDateOfBirth.Click += new System.EventHandler(this.txtDateOfBirth_Click);
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(46)))), ((int)(((byte)(15)))));
@@ -377,6 +365,18 @@ namespace Fim_Insura
             this.lbltotal.Size = new System.Drawing.Size(0, 15);
             this.lbltotal.TabIndex = 32;
             // 
+            // DOB
+            // 
+            this.DOB.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
+            this.DOB.CalendarFont = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DOB.CustomFormat = "";
+            this.DOB.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DOB.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DOB.Location = new System.Drawing.Point(517, 309);
+            this.DOB.Name = "DOB";
+            this.DOB.Size = new System.Drawing.Size(280, 31);
+            this.DOB.TabIndex = 33;
+            // 
             // policyTypeReg
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -384,6 +384,7 @@ namespace Fim_Insura
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1000, 580);
+            this.Controls.Add(this.DOB);
             this.Controls.Add(this.lbltotal);
             this.Controls.Add(this.lblPolicy);
             this.Controls.Add(this.lblBirthDate);
@@ -402,7 +403,6 @@ namespace Fim_Insura
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel7);
-            this.Controls.Add(this.txtDateOfBirth);
             this.Controls.Add(this.txtCell);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtAddress);
@@ -443,7 +443,6 @@ namespace Fim_Insura
         private System.Windows.Forms.TextBox txtPolicyPeriod;
         private System.Windows.Forms.TextBox txtLastName;
         private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.TextBox txtDateOfBirth;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel6;
@@ -457,5 +456,6 @@ namespace Fim_Insura
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblBirthDate;
         private System.Windows.Forms.Label lbltotal;
+        private System.Windows.Forms.DateTimePicker DOB;
     }
 }
