@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Windows.Forms;
 
 namespace Fim_Insura.webApi
 {
@@ -15,7 +16,7 @@ namespace Fim_Insura.webApi
             }
             catch (Exception ex)
             {
-                
+                MessageBox.Show("message" + ex.ToString());
             }
         }
     }

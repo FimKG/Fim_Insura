@@ -34,11 +34,14 @@ namespace Fim_Insura
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.claim = new System.Windows.Forms.Button();
+            this.revProduct = new System.Windows.Forms.Button();
+            this.clientProfile = new System.Windows.Forms.Button();
+            this.insurProduct = new System.Windows.Forms.Button();
+            this.uC_InsuraPro1 = new Fim_Insura.Forms.UC_InsuraPro();
+            this.uC_claim1 = new Fim_Insura.user_Control.UC_claim();
+            this.uC_Rv_Product1 = new Fim_Insura.user_Control.UC_Rv_Product();
+            this.uC_profile1 = new Fim_Insura.user_Control.UC_profile();
             this.panel_header.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -66,7 +69,7 @@ namespace Fim_Insura
             this.lbl_LogOut.Size = new System.Drawing.Size(90, 27);
             this.lbl_LogOut.TabIndex = 16;
             this.lbl_LogOut.Text = "LogOut";
-            this.lbl_LogOut.Click += new System.EventHandler(this.label1_Click);
+            this.lbl_LogOut.Click += new System.EventHandler(this.lbl_LogOut_Click);
             // 
             // label2
             // 
@@ -100,72 +103,98 @@ namespace Fim_Insura
             this.label6.TabIndex = 16;
             this.label6.Text = "Product insurance";
             // 
-            // panel2
+            // claim
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.panel2.Location = new System.Drawing.Point(313, 70);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(687, 470);
-            this.panel2.TabIndex = 2;
+            this.claim.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.claim.Location = new System.Drawing.Point(53, 256);
+            this.claim.Name = "claim";
+            this.claim.Size = new System.Drawing.Size(254, 38);
+            this.claim.TabIndex = 3;
+            this.claim.Text = "Submit a Claim";
+            this.claim.UseVisualStyleBackColor = true;
+            this.claim.Click += new System.EventHandler(this.claim_Click);
             // 
-            // button1
+            // revProduct
             // 
-            this.button1.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(53, 197);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(173, 38);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Insure Product";
-            this.button1.UseVisualStyleBackColor = true;
+            this.revProduct.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.revProduct.Location = new System.Drawing.Point(53, 313);
+            this.revProduct.Name = "revProduct";
+            this.revProduct.Size = new System.Drawing.Size(254, 38);
+            this.revProduct.TabIndex = 3;
+            this.revProduct.Text = "Review Products";
+            this.revProduct.UseVisualStyleBackColor = true;
+            this.revProduct.Click += new System.EventHandler(this.revProduct_Click);
             // 
-            // button2
+            // clientProfile
             // 
-            this.button2.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(53, 256);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(173, 38);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Submit a Claim";
-            this.button2.UseVisualStyleBackColor = true;
+            this.clientProfile.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.clientProfile.Location = new System.Drawing.Point(53, 368);
+            this.clientProfile.Name = "clientProfile";
+            this.clientProfile.Size = new System.Drawing.Size(254, 38);
+            this.clientProfile.TabIndex = 3;
+            this.clientProfile.Text = "Profile";
+            this.clientProfile.UseVisualStyleBackColor = true;
+            this.clientProfile.Click += new System.EventHandler(this.clientProfile_Click);
             // 
-            // button3
+            // insurProduct
             // 
-            this.button3.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button3.Location = new System.Drawing.Point(53, 313);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(173, 38);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Review Products";
-            this.button3.UseVisualStyleBackColor = true;
+            this.insurProduct.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.insurProduct.Location = new System.Drawing.Point(53, 197);
+            this.insurProduct.Name = "insurProduct";
+            this.insurProduct.Size = new System.Drawing.Size(254, 38);
+            this.insurProduct.TabIndex = 3;
+            this.insurProduct.Text = "Insure Product";
+            this.insurProduct.UseVisualStyleBackColor = true;
+            this.insurProduct.Click += new System.EventHandler(this.insurProduct_Click);
             // 
-            // button4
+            // uC_InsuraPro1
             // 
-            this.button4.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button4.Location = new System.Drawing.Point(53, 368);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(173, 38);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Profile";
-            this.button4.UseVisualStyleBackColor = true;
+            this.uC_InsuraPro1.Location = new System.Drawing.Point(313, 76);
+            this.uC_InsuraPro1.Name = "uC_InsuraPro1";
+            this.uC_InsuraPro1.Size = new System.Drawing.Size(687, 458);
+            this.uC_InsuraPro1.TabIndex = 4;
+            // 
+            // uC_claim1
+            // 
+            this.uC_claim1.Location = new System.Drawing.Point(313, 76);
+            this.uC_claim1.Name = "uC_claim1";
+            this.uC_claim1.Size = new System.Drawing.Size(687, 458);
+            this.uC_claim1.TabIndex = 5;
+            // 
+            // uC_Rv_Product1
+            // 
+            this.uC_Rv_Product1.Location = new System.Drawing.Point(313, 76);
+            this.uC_Rv_Product1.Name = "uC_Rv_Product1";
+            this.uC_Rv_Product1.Size = new System.Drawing.Size(687, 458);
+            this.uC_Rv_Product1.TabIndex = 6;
+            // 
+            // uC_profile1
+            // 
+            this.uC_profile1.Location = new System.Drawing.Point(313, 76);
+            this.uC_profile1.Name = "uC_profile1";
+            this.uC_profile1.Size = new System.Drawing.Size(687, 458);
+            this.uC_profile1.TabIndex = 7;
             // 
             // client_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1000, 580);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.uC_profile1);
+            this.Controls.Add(this.uC_Rv_Product1);
+            this.Controls.Add(this.uC_claim1);
+            this.Controls.Add(this.uC_InsuraPro1);
+            this.Controls.Add(this.clientProfile);
+            this.Controls.Add(this.revProduct);
+            this.Controls.Add(this.claim);
+            this.Controls.Add(this.insurProduct);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel_header);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "client_Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "client Main";
+            this.Load += new System.EventHandler(this.client_Main_Load);
             this.panel_header.ResumeLayout(false);
             this.panel_header.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -181,10 +210,13 @@ namespace Fim_Insura
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button claim;
+        private System.Windows.Forms.Button revProduct;
+        private System.Windows.Forms.Button clientProfile;
+        private System.Windows.Forms.Button insurProduct;
+        private Forms.UC_InsuraPro uC_InsuraPro1;
+        private user_Control.UC_claim uC_claim1;
+        private user_Control.UC_Rv_Product uC_Rv_Product1;
+        private user_Control.UC_profile uC_profile1;
     }
 }

@@ -35,7 +35,6 @@ namespace Fim_Insura
             this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.cbCarType = new System.Windows.Forms.ComboBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -43,7 +42,6 @@ namespace Fim_Insura
             this.button5 = new System.Windows.Forms.Button();
             this.panel_header.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel_header
@@ -106,7 +104,6 @@ namespace Fim_Insura
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.panel2.Controls.Add(this.cbCarType);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel2.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.panel2.Location = new System.Drawing.Point(313, 70);
@@ -114,21 +111,12 @@ namespace Fim_Insura
             this.panel2.Size = new System.Drawing.Size(687, 470);
             this.panel2.TabIndex = 2;
             // 
-            // cbCarType
-            // 
-            this.cbCarType.FormattingEnabled = true;
-            this.cbCarType.Location = new System.Drawing.Point(48, 48);
-            this.cbCarType.Name = "cbCarType";
-            this.cbCarType.Size = new System.Drawing.Size(220, 22);
-            this.cbCarType.TabIndex = 0;
-            this.cbCarType.Text = "Select Car to Rent";
-            // 
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button3.Location = new System.Drawing.Point(61, 298);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(173, 38);
+            this.button3.Size = new System.Drawing.Size(246, 38);
             this.button3.TabIndex = 4;
             this.button3.Text = "Add Policies";
             this.button3.UseVisualStyleBackColor = true;
@@ -138,7 +126,7 @@ namespace Fim_Insura
             this.button2.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button2.Location = new System.Drawing.Point(61, 241);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(173, 38);
+            this.button2.Size = new System.Drawing.Size(246, 38);
             this.button2.TabIndex = 5;
             this.button2.Text = "View Clients";
             this.button2.UseVisualStyleBackColor = true;
@@ -148,7 +136,7 @@ namespace Fim_Insura
             this.button1.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button1.Location = new System.Drawing.Point(61, 182);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(173, 38);
+            this.button1.Size = new System.Drawing.Size(246, 38);
             this.button1.TabIndex = 6;
             this.button1.Text = "Manage Clients";
             this.button1.UseVisualStyleBackColor = true;
@@ -158,7 +146,7 @@ namespace Fim_Insura
             this.button4.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button4.Location = new System.Drawing.Point(61, 358);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(173, 38);
+            this.button4.Size = new System.Drawing.Size(246, 38);
             this.button4.TabIndex = 4;
             this.button4.Text = "View Policies";
             this.button4.UseVisualStyleBackColor = true;
@@ -168,7 +156,7 @@ namespace Fim_Insura
             this.button5.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button5.Location = new System.Drawing.Point(61, 417);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(173, 38);
+            this.button5.Size = new System.Drawing.Size(246, 38);
             this.button5.TabIndex = 4;
             this.button5.Text = "Profile";
             this.button5.UseVisualStyleBackColor = true;
@@ -194,7 +182,6 @@ namespace Fim_Insura
             this.panel_header.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -207,7 +194,6 @@ namespace Fim_Insura
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.ComboBox cbCarType;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
