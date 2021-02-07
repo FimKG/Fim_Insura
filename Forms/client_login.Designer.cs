@@ -39,6 +39,7 @@ namespace Fim_Insura.Forms
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.lblClose = new System.Windows.Forms.Label();
+            this.lblError = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -142,6 +143,19 @@ namespace Fim_Insura.Forms
             this.lblClose.Text = "X";
             this.lblClose.Click += new System.EventHandler(this.lblClose_Click);
             // 
+            // lblError
+            // 
+            this.lblError.AutoSize = true;
+            this.lblError.BackColor = System.Drawing.Color.Transparent;
+            this.lblError.Font = new System.Drawing.Font("Verdana", 12F);
+            this.lblError.ForeColor = System.Drawing.Color.White;
+            this.lblError.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.lblError.Location = new System.Drawing.Point(327, 48);
+            this.lblError.Name = "lblError";
+            this.lblError.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblError.Size = new System.Drawing.Size(0, 18);
+            this.lblError.TabIndex = 37;
+            // 
             // client_login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -149,6 +163,7 @@ namespace Fim_Insura.Forms
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(686, 347);
+            this.Controls.Add(this.lblError);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.txtPassword);
@@ -180,5 +195,6 @@ namespace Fim_Insura.Forms
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.Label lblClose;
+        private System.Windows.Forms.Label lblError;
     }
 }

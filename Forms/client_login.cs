@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using System.Linq;
 
 namespace Fim_Insura.Forms
 {
@@ -38,7 +39,24 @@ namespace Fim_Insura.Forms
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            using (Insura_Context db = new Insura_Context())
+            {
+                var query = from log in db.clientTB
+                            where log.Email == txtUsername.Text && log.Password == txtPassword.Text
+                            select log;
+                var clients = query.FirstOrDefault<ClientTB>();
 
+                if (clients != null && clients.Email == txtUsername.Text && clients.Password == txtPassword.Text)
+                {
+                    client_Main main = new client_Main();
+                    this.Hide();
+                    main.Show();
+                }
+                else
+                {
+                    lblError.Text = "Invalid Username or Password";
+                }
+            }
         }
 
         private void btnRegister_Click(object sender, EventArgs e)
