@@ -48,8 +48,8 @@ namespace Fim_Insura
             this.lblClose.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.lblClose.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblClose.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblClose.Location = new System.Drawing.Point(760, 10);
+            this.lblClose.Font = new System.Drawing.Font("Verdana", 15.75F);
+            this.lblClose.Location = new System.Drawing.Point(651, 9);
             this.lblClose.Name = "lblClose";
             this.lblClose.Size = new System.Drawing.Size(28, 27);
             this.lblClose.TabIndex = 0;
@@ -60,28 +60,27 @@ namespace Fim_Insura
             // 
             this.txtUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtUsername.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtUsername.Location = new System.Drawing.Point(367, 95);
+            this.txtUsername.Font = new System.Drawing.Font("Verdana", 14.25F);
+            this.txtUsername.Location = new System.Drawing.Point(315, 82);
             this.txtUsername.Name = "txtUsername";
-            //this.txtUsername.PlaceholderText = "Username or Email";
-            this.txtUsername.Size = new System.Drawing.Size(280, 24);
+            this.txtUsername.Size = new System.Drawing.Size(240, 24);
             this.txtUsername.TabIndex = 1;
             this.txtUsername.Click += new System.EventHandler(this.txtUsername_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(46)))), ((int)(((byte)(15)))));
-            this.panel1.Location = new System.Drawing.Point(367, 124);
+            this.panel1.Location = new System.Drawing.Point(315, 107);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(280, 1);
+            this.panel1.Size = new System.Drawing.Size(240, 1);
             this.panel1.TabIndex = 2;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(35, 140);
+            this.pictureBox1.Location = new System.Drawing.Point(30, 121);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(172, 101);
+            this.pictureBox1.Size = new System.Drawing.Size(147, 88);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
@@ -89,11 +88,11 @@ namespace Fim_Insura
             // btnLogin
             // 
             this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
-            this.btnLogin.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnLogin.Font = new System.Drawing.Font("Verdana", 14.25F);
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(367, 208);
+            this.btnLogin.Location = new System.Drawing.Point(315, 180);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(106, 34);
+            this.btnLogin.Size = new System.Drawing.Size(91, 29);
             this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
@@ -102,20 +101,19 @@ namespace Fim_Insura
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(46)))), ((int)(((byte)(15)))));
-            this.panel2.Location = new System.Drawing.Point(367, 171);
+            this.panel2.Location = new System.Drawing.Point(315, 148);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(280, 1);
+            this.panel2.Size = new System.Drawing.Size(240, 1);
             this.panel2.TabIndex = 4;
             // 
             // txtPassword
             // 
             this.txtPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPassword.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtPassword.Location = new System.Drawing.Point(367, 142);
+            this.txtPassword.Font = new System.Drawing.Font("Verdana", 14.25F);
+            this.txtPassword.Location = new System.Drawing.Point(315, 123);
             this.txtPassword.Name = "txtPassword";
-            //this.txtPassword.PlaceholderText = "Password";
-            this.txtPassword.Size = new System.Drawing.Size(280, 24);
+            this.txtPassword.Size = new System.Drawing.Size(240, 24);
             this.txtPassword.TabIndex = 3;
             this.txtPassword.Click += new System.EventHandler(this.txtPassword_Click);
             // 
@@ -124,21 +122,21 @@ namespace Fim_Insura
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Cursor = System.Windows.Forms.Cursors.No;
-            this.label2.Font = new System.Drawing.Font("Verdana", 32.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(35, 55);
+            this.label2.Font = new System.Drawing.Font("Verdana", 32.25F);
+            this.label2.Location = new System.Drawing.Point(30, 48);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(253, 52);
+            this.label2.Size = new System.Drawing.Size(254, 52);
             this.label2.TabIndex = 5;
             this.label2.Text = "FIM Insura";
             // 
             // btnRegister
             // 
             this.btnRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
-            this.btnRegister.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnRegister.Font = new System.Drawing.Font("Verdana", 14.25F);
             this.btnRegister.ForeColor = System.Drawing.Color.White;
-            this.btnRegister.Location = new System.Drawing.Point(541, 208);
+            this.btnRegister.Location = new System.Drawing.Point(440, 180);
             this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(106, 34);
+            this.btnRegister.Size = new System.Drawing.Size(100, 29);
             this.btnRegister.TabIndex = 4;
             this.btnRegister.Text = "Register";
             this.btnRegister.UseVisualStyleBackColor = false;
@@ -146,12 +144,12 @@ namespace Fim_Insura
             // 
             // login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MintCream;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(800, 400);
+            this.ClientSize = new System.Drawing.Size(686, 347);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.txtPassword);

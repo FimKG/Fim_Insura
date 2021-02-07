@@ -5,7 +5,12 @@ using System.Text;
 
 namespace Fim_Insura.webApi
 {
-    class adminTB: BaseTable
+    public class AdminTB: BaseTable
     {
+        public string Fname { get; set; }
+        public string Lname { get; set; }
+        public string Email { get; set; }
+        public string Cellphone { get; set; }
+        public string Password { get; set; }
     }
 }

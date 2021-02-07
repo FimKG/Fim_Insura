@@ -3,21 +3,18 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Fim_Insura.Forms
+namespace Fim_Insura.user_Control.UC_Admin
 {
-    public partial class UC_InsuraPro : UserControl
+    public partial class UC_manage : UserControl
     {
-        public UC_InsuraPro()
+        public UC_manage()
         {
             InitializeComponent();
-        }
-
-        private void btnInsured_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

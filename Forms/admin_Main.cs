@@ -18,7 +18,9 @@ namespace Fim_Insura
         //landing land = new landing();
         private void lbl_LogOut_Click(object sender, EventArgs e)
         {
-            //land.Show();
+            landing landing = new landing();
+            this.Hide();
+            landing.Show();
         }
     }   
 }
