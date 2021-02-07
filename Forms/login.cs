@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Fim_Insura.Forms;
+using Fim_Insura.webApi;
 
 namespace Fim_Insura
 {
@@ -39,7 +41,24 @@ namespace Fim_Insura
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            using (Insura_Context db = new Insura_Context())
+            {
+                var query = from log in db.adminTB
+                            where log.Email == txtUsername.Text && log.Password == txtPassword.Text
+                            select log;
+                var admin = query.FirstOrDefault<AdminTB>();
 
+                if(admin != null && admin.Email == txtUsername.Text && admin.Password == txtPassword.Text )
+                {
+                    admin_Main main = new admin_Main();
+                    this.Hide();
+                    main.Show();
+                }
+                else
+                {
+                    lblError.Text = "Invalid Username or Password";
+                }
+            }
         }
 
         private void btnRegister_Click(object sender, EventArgs e)
