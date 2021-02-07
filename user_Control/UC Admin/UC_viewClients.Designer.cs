@@ -1,7 +1,7 @@
 ﻿
-namespace Fim_Insura.user_Control
+namespace Fim_Insura.user_Control.UC_Admin
 {
-    partial class UC_Rv_Product
+    partial class UC_viewClients
     {
         /// <summary> 
         /// Required designer variable.
@@ -29,40 +29,40 @@ namespace Fim_Insura.user_Control
         /// </summary>
         private void InitializeComponent()
         {
+            this.gvClientList = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
-            this.gvProdList = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.gvProdList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvClientList)).BeginInit();
             this.SuspendLayout();
+            // 
+            // gvClientList
+            // 
+            this.gvClientList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvClientList.Location = new System.Drawing.Point(53, 140);
+            this.gvClientList.Name = "gvClientList";
+            this.gvClientList.RowTemplate.Height = 25;
+            this.gvClientList.Size = new System.Drawing.Size(477, 201);
+            this.gvClientList.TabIndex = 61;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Verdana", 32.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(186, 45);
+            this.label2.Font = new System.Drawing.Font("Verdana", 32.25F);
+            this.label2.Location = new System.Drawing.Point(158, 63);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(297, 52);
-            this.label2.TabIndex = 58;
-            this.label2.Text = "Your Poducts";
+            this.label2.Size = new System.Drawing.Size(169, 52);
+            this.label2.TabIndex = 60;
+            this.label2.Text = "Clients";
             // 
-            // gvProdList
+            // UC_viewClients
             // 
-            this.gvProdList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvProdList.Location = new System.Drawing.Point(63, 134);
-            this.gvProdList.Name = "gvProdList";
-            this.gvProdList.RowTemplate.Height = 25;
-            this.gvProdList.Size = new System.Drawing.Size(556, 232);
-            this.gvProdList.TabIndex = 59;
-            // 
-            // UC_Rv_Product
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.gvProdList);
+            this.Controls.Add(this.gvClientList);
             this.Controls.Add(this.label2);
-            this.Name = "UC_Rv_Product";
-            this.Size = new System.Drawing.Size(687, 470);
-            ((System.ComponentModel.ISupportInitialize)(this.gvProdList)).EndInit();
+            this.Name = "UC_viewClients";
+            this.Size = new System.Drawing.Size(583, 404);
+            ((System.ComponentModel.ISupportInitialize)(this.gvClientList)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -70,7 +70,7 @@ namespace Fim_Insura.user_Control
 
         #endregion
 
+        private System.Windows.Forms.DataGridView gvClientList;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView gvProdList;
     }
 }

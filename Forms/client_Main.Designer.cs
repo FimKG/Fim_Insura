@@ -51,7 +51,7 @@ namespace Fim_Insura
             this.panel_header.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_header.Location = new System.Drawing.Point(0, 0);
             this.panel_header.Name = "panel_header";
-            this.panel_header.Size = new System.Drawing.Size(1000, 70);
+            this.panel_header.Size = new System.Drawing.Size(857, 61);
             this.panel_header.TabIndex = 0;
             // 
             // lbl_LogOut
@@ -59,9 +59,9 @@ namespace Fim_Insura
             this.lbl_LogOut.AutoSize = true;
             this.lbl_LogOut.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbl_LogOut.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbl_LogOut.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_LogOut.Font = new System.Drawing.Font("Verdana", 15.75F);
             this.lbl_LogOut.ForeColor = System.Drawing.Color.Maroon;
-            this.lbl_LogOut.Location = new System.Drawing.Point(876, 29);
+            this.lbl_LogOut.Location = new System.Drawing.Point(751, 25);
             this.lbl_LogOut.Name = "lbl_LogOut";
             this.lbl_LogOut.Size = new System.Drawing.Size(90, 27);
             this.lbl_LogOut.TabIndex = 16;
@@ -72,10 +72,10 @@ namespace Fim_Insura
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Verdana", 32.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(395, 7);
+            this.label2.Font = new System.Drawing.Font("Verdana", 32.25F);
+            this.label2.Location = new System.Drawing.Point(339, 6);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(253, 52);
+            this.label2.Size = new System.Drawing.Size(254, 52);
             this.label2.TabIndex = 15;
             this.label2.Text = "FIM Insura";
             // 
@@ -84,17 +84,17 @@ namespace Fim_Insura
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel1.Controls.Add(this.label6);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 540);
+            this.panel1.Location = new System.Drawing.Point(0, 468);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1000, 40);
+            this.panel1.Size = new System.Drawing.Size(857, 35);
             this.panel1.TabIndex = 0;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label6.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(833, 9);
+            this.label6.Font = new System.Drawing.Font("Verdana", 12F);
+            this.label6.Location = new System.Drawing.Point(690, 8);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(155, 20);
             this.label6.TabIndex = 16;
@@ -102,10 +102,10 @@ namespace Fim_Insura
             // 
             // claim
             // 
-            this.claim.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.claim.Location = new System.Drawing.Point(53, 256);
+            this.claim.Font = new System.Drawing.Font("Verdana", 11.25F);
+            this.claim.Location = new System.Drawing.Point(45, 222);
             this.claim.Name = "claim";
-            this.claim.Size = new System.Drawing.Size(254, 38);
+            this.claim.Size = new System.Drawing.Size(218, 33);
             this.claim.TabIndex = 3;
             this.claim.Text = "Submit a Claim";
             this.claim.UseVisualStyleBackColor = true;
@@ -113,10 +113,10 @@ namespace Fim_Insura
             // 
             // revProduct
             // 
-            this.revProduct.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.revProduct.Location = new System.Drawing.Point(53, 313);
+            this.revProduct.Font = new System.Drawing.Font("Verdana", 11.25F);
+            this.revProduct.Location = new System.Drawing.Point(45, 271);
             this.revProduct.Name = "revProduct";
-            this.revProduct.Size = new System.Drawing.Size(254, 38);
+            this.revProduct.Size = new System.Drawing.Size(218, 33);
             this.revProduct.TabIndex = 3;
             this.revProduct.Text = "Review Products";
             this.revProduct.UseVisualStyleBackColor = true;
@@ -124,10 +124,10 @@ namespace Fim_Insura
             // 
             // clientProfile
             // 
-            this.clientProfile.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.clientProfile.Location = new System.Drawing.Point(53, 368);
+            this.clientProfile.Font = new System.Drawing.Font("Verdana", 11.25F);
+            this.clientProfile.Location = new System.Drawing.Point(45, 319);
             this.clientProfile.Name = "clientProfile";
-            this.clientProfile.Size = new System.Drawing.Size(254, 38);
+            this.clientProfile.Size = new System.Drawing.Size(218, 33);
             this.clientProfile.TabIndex = 3;
             this.clientProfile.Text = "Profile";
             this.clientProfile.UseVisualStyleBackColor = true;
@@ -135,10 +135,10 @@ namespace Fim_Insura
             // 
             // insurProduct
             // 
-            this.insurProduct.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.insurProduct.Location = new System.Drawing.Point(53, 197);
+            this.insurProduct.Font = new System.Drawing.Font("Verdana", 11.25F);
+            this.insurProduct.Location = new System.Drawing.Point(45, 171);
             this.insurProduct.Name = "insurProduct";
-            this.insurProduct.Size = new System.Drawing.Size(254, 38);
+            this.insurProduct.Size = new System.Drawing.Size(218, 33);
             this.insurProduct.TabIndex = 3;
             this.insurProduct.Text = "Insure Product";
             this.insurProduct.UseVisualStyleBackColor = true;
@@ -148,17 +148,17 @@ namespace Fim_Insura
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.panel2.Location = new System.Drawing.Point(313, 70);
+            this.panel2.Font = new System.Drawing.Font("Verdana", 9F);
+            this.panel2.Location = new System.Drawing.Point(268, 61);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(687, 470);
+            this.panel2.Size = new System.Drawing.Size(589, 407);
             this.panel2.TabIndex = 4;
             // 
             // client_Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1000, 580);
+            this.ClientSize = new System.Drawing.Size(857, 503);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.clientProfile);
             this.Controls.Add(this.revProduct);

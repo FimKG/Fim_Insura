@@ -16,8 +16,6 @@ namespace Fim_Insura
             InitializeComponent();
             cbCoverValue.SelectedIndex = 0;
         }
-
-        ClientTB policy = new ClientTB();
         
         private void lblClose_Click(object sender, EventArgs e)
         {
@@ -31,7 +29,7 @@ namespace Fim_Insura
             //txtnames.Clear();
             //txtnames.BackColor = Color.FromArgb(20, 155, 163);
             //panel1.BackColor = Color.FromArgb(20, 155, 163);
-            //lblfName.Text = "First Name";
+            lblfName.Text = "First Name";
         }
 
         private void txtLastName_Click(object sender, EventArgs e)
@@ -39,7 +37,7 @@ namespace Fim_Insura
             //txtLastName.Clear();
             //txtLastName.BackColor = Color.FromArgb(20, 155, 163);
             //panel2.BackColor = Color.FromArgb(20, 155, 163);
-            //lblLastName.Text = "Last Name";
+            lblLastName.Text = "Last Name";
         }
 
         private void txtAddress_Click(object sender, EventArgs e)
@@ -47,7 +45,7 @@ namespace Fim_Insura
             //txtAddress.Clear();
             //txtAddress.BackColor = Color.FromArgb(20, 155, 163);
             //panel3.BackColor = Color.FromArgb(20, 155, 163);
-            //lblAddress.Text = "Address";
+            lblAddress.Text = "Address";
         }
 
         private void txtEmail_Click(object sender, EventArgs e)
@@ -55,7 +53,7 @@ namespace Fim_Insura
             //txtEmail.Clear();
             //txtEmail.BackColor = Color.FromArgb(20, 155, 163);
             //panel4.BackColor = Color.FromArgb(20, 155, 163);
-            //lblEmail.Text = "Email";
+            lblEmail.Text = "Email";
         }
 
         private void txtCell_Click(object sender, EventArgs e)
@@ -63,7 +61,7 @@ namespace Fim_Insura
             //txtCell.Clear();
             //txtCell.BackColor = Color.FromArgb(20, 155, 163);
             //panel5.BackColor = Color.FromArgb(20, 155, 163);
-            //lblCell.Text = "Cellphone";
+            lblCell.Text = "Cellphone";
         }
 
         private void txtDateOfBirth_Click(object sender, EventArgs e)
@@ -71,7 +69,7 @@ namespace Fim_Insura
             //txtDateOfBirth.Clear();
             //txtDateOfBirth.BackColor = Color.FromArgb(20, 155, 163);
             //panel6.BackColor = Color.FromArgb(20, 155, 163);
-            //lblBirthDate.Text = "Date Of Birth";
+            lblBirthDate.Text = "Date Of Birth";
         }
 
         private void txtPolicyPeriod_Click(object sender, EventArgs e)
@@ -79,7 +77,7 @@ namespace Fim_Insura
             //txtPolicyPeriod.Clear();
             //txtPolicyPeriod.BackColor = Color.FromArgb(20, 155, 163);
             //panel7.BackColor = Color.FromArgb(20, 155, 163);
-            //lblPolicy.Text = "PolicyPeriod";
+            lblPolicy.Text = "PolicyPeriod";
         }
 
         private void btnCalculatePolicy_Click(object sender, EventArgs e)
@@ -91,8 +89,40 @@ namespace Fim_Insura
         private void btnLogPolicy_Click(object sender, EventArgs e)
         {
             client_Main logPolicy = new client_Main();
-            this.Hide();
-            logPolicy.Show();
+            using (Insura_Context db = new Insura_Context())
+            {
+                ClientTB clienttb = new ClientTB()
+                {
+                    Id = Guid.NewGuid(),
+                    Fname = txtnames.Text,
+                    Lname = txtLastname.Text,
+                    Adress = txtAddress.Text,
+                    Email = txtEmail.Text,
+                    DOB = callDob.Text,
+                    Cellphone = txtCell.Text,
+                    Password = txtPassword.Text,
+                    AmendedOn = DateTime.Now,
+                    CreatedOn = DateTime.Now
+
+                };
+                //if (db.adminTB.Find(admintb.Email) != null)
+                //{
+                //    lblError.Text = "Email Already taken";
+                //}
+                //else
+                //{
+                db.clientTB.Add(clienttb);
+                if (db.ChangeTracker.HasChanges())
+                {
+                    db.SaveChanges();
+                    lblError.Text = "Successfully registered";
+                }
+
+                //}            
+                this.Hide();
+                logPolicy.Show();
+            }
+
             
         }
     }

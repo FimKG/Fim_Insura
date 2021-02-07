@@ -33,26 +33,28 @@ namespace Fim_Insura.Forms
             this.cbCoverValue = new System.Windows.Forms.ComboBox();
             this.btnInsured = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.txtProductName = new System.Windows.Forms.TextBox();
             this.txtPolicyPeriod = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lbltotal = new System.Windows.Forms.Label();
+            this.lblError = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Verdana", 32.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(120, 43);
+            this.label2.Font = new System.Drawing.Font("Verdana", 32.25F);
+            this.label2.Location = new System.Drawing.Point(103, 37);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(447, 52);
+            this.label2.Size = new System.Drawing.Size(448, 52);
             this.label2.TabIndex = 40;
             this.label2.Text = "Insure Your Product";
             // 
             // cbCoverValue
             // 
             this.cbCoverValue.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.cbCoverValue.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbCoverValue.Font = new System.Drawing.Font("Verdana", 12F);
             this.cbCoverValue.FormattingEnabled = true;
             this.cbCoverValue.Items.AddRange(new object[] {
             "Select Cover Value",
@@ -62,19 +64,19 @@ namespace Fim_Insura.Forms
             "4000",
             "5000",
             "6000"});
-            this.cbCoverValue.Location = new System.Drawing.Point(205, 147);
+            this.cbCoverValue.Location = new System.Drawing.Point(176, 127);
             this.cbCoverValue.Name = "cbCoverValue";
-            this.cbCoverValue.Size = new System.Drawing.Size(280, 26);
+            this.cbCoverValue.Size = new System.Drawing.Size(241, 26);
             this.cbCoverValue.TabIndex = 39;
             // 
             // btnInsured
             // 
             this.btnInsured.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
-            this.btnInsured.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnInsured.Font = new System.Drawing.Font("Verdana", 14.25F);
             this.btnInsured.ForeColor = System.Drawing.Color.White;
-            this.btnInsured.Location = new System.Drawing.Point(275, 394);
+            this.btnInsured.Location = new System.Drawing.Point(236, 341);
             this.btnInsured.Name = "btnInsured";
-            this.btnInsured.Size = new System.Drawing.Size(137, 34);
+            this.btnInsured.Size = new System.Drawing.Size(117, 29);
             this.btnInsured.TabIndex = 38;
             this.btnInsured.Text = "Insured";
             this.btnInsured.UseVisualStyleBackColor = false;
@@ -83,54 +85,77 @@ namespace Fim_Insura.Forms
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(46)))), ((int)(((byte)(15)))));
-            this.panel7.Location = new System.Drawing.Point(205, 219);
+            this.panel7.Location = new System.Drawing.Point(176, 190);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(280, 1);
+            this.panel7.Size = new System.Drawing.Size(240, 1);
             this.panel7.TabIndex = 37;
+            // 
+            // txtProductName
+            // 
+            this.txtProductName.BackColor = System.Drawing.Color.White;
+            this.txtProductName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtProductName.Font = new System.Drawing.Font("Verdana", 14.25F);
+            this.txtProductName.Location = new System.Drawing.Point(176, 165);
+            this.txtProductName.Name = "txtProductName";
+            this.txtProductName.Size = new System.Drawing.Size(240, 24);
+            this.txtProductName.TabIndex = 36;
             // 
             // txtPolicyPeriod
             // 
             this.txtPolicyPeriod.BackColor = System.Drawing.Color.White;
             this.txtPolicyPeriod.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPolicyPeriod.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtPolicyPeriod.Location = new System.Drawing.Point(205, 190);
+            this.txtPolicyPeriod.Font = new System.Drawing.Font("Verdana", 14.25F);
+            this.txtPolicyPeriod.Location = new System.Drawing.Point(176, 206);
             this.txtPolicyPeriod.Name = "txtPolicyPeriod";
-            //this.txtPolicyPeriod.PlaceholderText = "Policy Period";
-            this.txtPolicyPeriod.Size = new System.Drawing.Size(280, 24);
+            this.txtPolicyPeriod.Size = new System.Drawing.Size(240, 24);
             this.txtPolicyPeriod.TabIndex = 36;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(205, 238);
-            this.textBox1.Name = "textBox1";
-            //this.textBox1.PlaceholderText = "Product";
-            this.textBox1.Size = new System.Drawing.Size(280, 24);
-            this.textBox1.TabIndex = 36;
+            this.txtPolicyPeriod.TextChanged += new System.EventHandler(this.txtPolicyPeriod_TextChanged);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(46)))), ((int)(((byte)(15)))));
-            this.panel1.Location = new System.Drawing.Point(205, 267);
+            this.panel1.Location = new System.Drawing.Point(176, 231);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(280, 1);
+            this.panel1.Size = new System.Drawing.Size(240, 1);
             this.panel1.TabIndex = 37;
+            // 
+            // lbltotal
+            // 
+            this.lbltotal.AutoSize = true;
+            this.lbltotal.Font = new System.Drawing.Font("Verdana", 14.25F);
+            this.lbltotal.Location = new System.Drawing.Point(192, 251);
+            this.lbltotal.Name = "lbltotal";
+            this.lbltotal.Size = new System.Drawing.Size(0, 23);
+            this.lbltotal.TabIndex = 41;
+            // 
+            // lblError
+            // 
+            this.lblError.AutoSize = true;
+            this.lblError.BackColor = System.Drawing.Color.Transparent;
+            this.lblError.Font = new System.Drawing.Font("Verdana", 12F);
+            this.lblError.ForeColor = System.Drawing.Color.White;
+            this.lblError.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.lblError.Location = new System.Drawing.Point(203, 310);
+            this.lblError.Name = "lblError";
+            this.lblError.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblError.Size = new System.Drawing.Size(0, 18);
+            this.lblError.TabIndex = 42;
             // 
             // UC_InsuraPro
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lblError);
+            this.Controls.Add(this.lbltotal);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cbCoverValue);
             this.Controls.Add(this.btnInsured);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel7);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.txtPolicyPeriod);
+            this.Controls.Add(this.txtProductName);
             this.Name = "UC_InsuraPro";
-            this.Size = new System.Drawing.Size(687, 458);
+            this.Size = new System.Drawing.Size(583, 404);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -142,8 +167,10 @@ namespace Fim_Insura.Forms
         private System.Windows.Forms.ComboBox cbCoverValue;
         private System.Windows.Forms.Button btnInsured;
         private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.TextBox txtProductName;
         private System.Windows.Forms.TextBox txtPolicyPeriod;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lbltotal;
+        private System.Windows.Forms.Label lblError;
     }
 }

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Fim_Insura.Forms;
+using Fim_Insura.webApi;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,11 +17,11 @@ namespace Fim_Insura
         {
             InitializeComponent();
         }
-
+        login log = new login();
         private void lblClose_Click(object sender, EventArgs e)
         {
             this.Close();
-            login log = new login();
+            
             log.Show();
         }
 
@@ -68,6 +70,35 @@ namespace Fim_Insura
 
             if (cbCondition.Checked == true)
             {
+                using(Insura_Context db = new Insura_Context())
+                {
+                    AdminTB admintb = new AdminTB()
+                    {
+                        Id = Guid.NewGuid(),
+                        Fname = txtnames.Text,
+                        Lname = txtLastname.Text,
+                        Email = txtEmail.Text,
+                        Cellphone = txtTelno.Text,
+                        Password = txtPassword.Text,
+                        AmendedOn = DateTime.Now,
+                        CreatedOn= DateTime.Now
+                     
+                    };
+                    //if (db.adminTB.Find(admintb.Email) != null)
+                    //{
+                    //    lblError.Text = "Email Already taken";
+                    //}
+                    //else
+                    //{
+                        db.adminTB.Add(admintb);
+                        if (db.ChangeTracker.HasChanges())
+                        {
+                            db.SaveChanges();
+                            lblError.Text = "Successfully registered";
+                        }
+                     
+                    //}
+                }
                 admin.Show();
                 this.Hide();
             }
@@ -79,7 +110,8 @@ namespace Fim_Insura
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            log.Show();
         }
     }
 }
