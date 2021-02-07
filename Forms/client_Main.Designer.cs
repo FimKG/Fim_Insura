@@ -38,10 +38,7 @@ namespace Fim_Insura
             this.revProduct = new System.Windows.Forms.Button();
             this.clientProfile = new System.Windows.Forms.Button();
             this.insurProduct = new System.Windows.Forms.Button();
-            this.uC_InsuraPro1 = new Fim_Insura.Forms.UC_InsuraPro();
-            this.uC_claim1 = new Fim_Insura.user_Control.UC_claim();
-            this.uC_Rv_Product1 = new Fim_Insura.user_Control.UC_Rv_Product();
-            this.uC_profile1 = new Fim_Insura.user_Control.UC_profile();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel_header.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -147,43 +144,22 @@ namespace Fim_Insura
             this.insurProduct.UseVisualStyleBackColor = true;
             this.insurProduct.Click += new System.EventHandler(this.insurProduct_Click);
             // 
-            // uC_InsuraPro1
+            // panel2
             // 
-            this.uC_InsuraPro1.Location = new System.Drawing.Point(313, 76);
-            this.uC_InsuraPro1.Name = "uC_InsuraPro1";
-            this.uC_InsuraPro1.Size = new System.Drawing.Size(687, 458);
-            this.uC_InsuraPro1.TabIndex = 4;
-            // 
-            // uC_claim1
-            // 
-            this.uC_claim1.Location = new System.Drawing.Point(313, 76);
-            this.uC_claim1.Name = "uC_claim1";
-            this.uC_claim1.Size = new System.Drawing.Size(687, 458);
-            this.uC_claim1.TabIndex = 5;
-            // 
-            // uC_Rv_Product1
-            // 
-            this.uC_Rv_Product1.Location = new System.Drawing.Point(313, 76);
-            this.uC_Rv_Product1.Name = "uC_Rv_Product1";
-            this.uC_Rv_Product1.Size = new System.Drawing.Size(687, 458);
-            this.uC_Rv_Product1.TabIndex = 6;
-            // 
-            // uC_profile1
-            // 
-            this.uC_profile1.Location = new System.Drawing.Point(313, 76);
-            this.uC_profile1.Name = "uC_profile1";
-            this.uC_profile1.Size = new System.Drawing.Size(687, 458);
-            this.uC_profile1.TabIndex = 7;
+            this.panel2.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel2.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.panel2.Location = new System.Drawing.Point(313, 70);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(687, 470);
+            this.panel2.TabIndex = 4;
             // 
             // client_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1000, 580);
-            this.Controls.Add(this.uC_profile1);
-            this.Controls.Add(this.uC_Rv_Product1);
-            this.Controls.Add(this.uC_claim1);
-            this.Controls.Add(this.uC_InsuraPro1);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.clientProfile);
             this.Controls.Add(this.revProduct);
             this.Controls.Add(this.claim);
@@ -214,9 +190,6 @@ namespace Fim_Insura
         private System.Windows.Forms.Button revProduct;
         private System.Windows.Forms.Button clientProfile;
         private System.Windows.Forms.Button insurProduct;
-        private Forms.UC_InsuraPro uC_InsuraPro1;
-        private user_Control.UC_claim uC_claim1;
-        private user_Control.UC_Rv_Product uC_Rv_Product1;
-        private user_Control.UC_profile uC_profile1;
+        private System.Windows.Forms.Panel panel2;
     }
 }

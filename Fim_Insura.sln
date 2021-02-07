@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fim_Insura", "Fim_Insura.csproj", "{B9AFF850-D082-4FEF-89FA-262875226794}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fim_Insura", "Fim_Insura.csproj", "{B1FC2DF0-55D6-4023-832A-ADC902A18D3B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B9AFF850-D082-4FEF-89FA-262875226794}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B9AFF850-D082-4FEF-89FA-262875226794}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B9AFF850-D082-4FEF-89FA-262875226794}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B9AFF850-D082-4FEF-89FA-262875226794}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1FC2DF0-55D6-4023-832A-ADC902A18D3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1FC2DF0-55D6-4023-832A-ADC902A18D3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1FC2DF0-55D6-4023-832A-ADC902A18D3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1FC2DF0-55D6-4023-832A-ADC902A18D3B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {98646EF0-B5BE-40E7-ABCC-87C7FD9ADEE8}
+		SolutionGuid = {AEEB4E27-D315-44BA-A92F-E92FC063E57F}
 	EndGlobalSection
 EndGlobal

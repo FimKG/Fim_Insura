@@ -36,8 +36,6 @@ namespace Fim_Insura.Forms
             this.txtPolicyPeriod = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // label2
@@ -80,6 +78,7 @@ namespace Fim_Insura.Forms
             this.btnInsured.TabIndex = 38;
             this.btnInsured.Text = "Insured";
             this.btnInsured.UseVisualStyleBackColor = false;
+            this.btnInsured.Click += new System.EventHandler(this.btnInsured_Click);
             // 
             // panel7
             // 
@@ -96,7 +95,7 @@ namespace Fim_Insura.Forms
             this.txtPolicyPeriod.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtPolicyPeriod.Location = new System.Drawing.Point(205, 190);
             this.txtPolicyPeriod.Name = "txtPolicyPeriod";
-            this.txtPolicyPeriod.PlaceholderText = "Policy Period";
+            //this.txtPolicyPeriod.PlaceholderText = "Policy Period";
             this.txtPolicyPeriod.Size = new System.Drawing.Size(280, 24);
             this.txtPolicyPeriod.TabIndex = 36;
             // 
@@ -107,7 +106,7 @@ namespace Fim_Insura.Forms
             this.textBox1.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox1.Location = new System.Drawing.Point(205, 238);
             this.textBox1.Name = "textBox1";
-            this.textBox1.PlaceholderText = "Policy Period";
+            //this.textBox1.PlaceholderText = "Product";
             this.textBox1.Size = new System.Drawing.Size(280, 24);
             this.textBox1.TabIndex = 36;
             // 
@@ -119,40 +118,19 @@ namespace Fim_Insura.Forms
             this.panel1.Size = new System.Drawing.Size(280, 1);
             this.panel1.TabIndex = 37;
             // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.White;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(205, 290);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PlaceholderText = "Policy Period";
-            this.textBox2.Size = new System.Drawing.Size(280, 24);
-            this.textBox2.TabIndex = 36;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(46)))), ((int)(((byte)(15)))));
-            this.panel2.Location = new System.Drawing.Point(205, 319);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(280, 1);
-            this.panel2.TabIndex = 37;
-            // 
-            // Ip_Ctr
+            // UC_InsuraPro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cbCoverValue);
             this.Controls.Add(this.btnInsured);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel7);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.txtPolicyPeriod);
-            this.Name = "Ip_Ctr";
-            this.Size = new System.Drawing.Size(687, 470);
+            this.Name = "UC_InsuraPro";
+            this.Size = new System.Drawing.Size(687, 458);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -167,7 +145,5 @@ namespace Fim_Insura.Forms
         private System.Windows.Forms.TextBox txtPolicyPeriod;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Panel panel2;
     }
 }

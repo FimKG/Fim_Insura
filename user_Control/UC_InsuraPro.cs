@@ -14,5 +14,10 @@ namespace Fim_Insura.Forms
         {
             InitializeComponent();
         }
+
+        private void btnInsured_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

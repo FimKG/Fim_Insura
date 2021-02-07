@@ -63,7 +63,7 @@ namespace Fim_Insura
             this.txtUsername.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtUsername.Location = new System.Drawing.Point(367, 95);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.PlaceholderText = "Username or Email";
+            //this.txtUsername.PlaceholderText = "Username or Email";
             this.txtUsername.Size = new System.Drawing.Size(280, 24);
             this.txtUsername.TabIndex = 1;
             this.txtUsername.Click += new System.EventHandler(this.txtUsername_Click);
@@ -114,7 +114,7 @@ namespace Fim_Insura
             this.txtPassword.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtPassword.Location = new System.Drawing.Point(367, 142);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PlaceholderText = "Password";
+            //this.txtPassword.PlaceholderText = "Password";
             this.txtPassword.Size = new System.Drawing.Size(280, 24);
             this.txtPassword.TabIndex = 3;
             this.txtPassword.Click += new System.EventHandler(this.txtPassword_Click);

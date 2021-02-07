@@ -17,7 +17,7 @@ namespace Fim_Insura
             cbCoverValue.SelectedIndex = 0;
         }
 
-        policy policy = new policy();
+        ClientTB policy = new ClientTB();
         
         private void lblClose_Click(object sender, EventArgs e)
         {
@@ -85,7 +85,7 @@ namespace Fim_Insura
         private void btnCalculatePolicy_Click(object sender, EventArgs e)
         {
             double coverValue = Convert.ToDouble(cbCoverValue.SelectedItem);
-            lbltotal.Text = (((coverValue * 0.25) + coverValue ) * double.Parse(txtPolicyPeriod.Text)).ToString();
+            lbltotal.Text = "Your Premium is valued at R" + (((coverValue * 0.25) + coverValue ) * double.Parse(txtPolicyPeriod.Text)).ToString();
         }
 
         private void btnLogPolicy_Click(object sender, EventArgs e)
