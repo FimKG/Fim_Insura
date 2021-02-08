@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Insura_DBDataSet" targetNamespace="http://tempuri.org/Insura_DBDataSet.xsd" xmlns:mstns="http://tempuri.org/Insura_DBDataSet.xsd" xmlns="http://tempuri.org/Insura_DBDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Insura_DBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Insura_DBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Fim_Insura.Properties.Settings.GlobalReference.Default.Insura_DBConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ProductTBsTableAdapter" GeneratorDataComponentClassName="ProductTBsTableAdapter" Name="ProductTBs" UserDataComponentName="ProductTBsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Insura_DBConnectionString (Settings)" DbObjectName="Insura_DB.dbo.ProductTBs" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT CoverValue, Period, ProductName, PremiumPrice FROM dbo.ProductTBs</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="CoverValue" DataSetColumn="CoverValue" />
+              <Mapping SourceColumn="Period" DataSetColumn="Period" />
+              <Mapping SourceColumn="ProductName" DataSetColumn="ProductName" />
+              <Mapping SourceColumn="PremiumPrice" DataSetColumn="PremiumPrice" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Insura_DBDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Insura_DBDataSet" msprop:Generator_UserDSName="Insura_DBDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ProductTBs" msprop:Generator_TableClassName="ProductTBsDataTable" msprop:Generator_TableVarName="tableProductTBs" msprop:Generator_TablePropName="ProductTBs" msprop:Generator_RowDeletingName="ProductTBsRowDeleting" msprop:Generator_RowChangingName="ProductTBsRowChanging" msprop:Generator_RowEvHandlerName="ProductTBsRowChangeEventHandler" msprop:Generator_RowDeletedName="ProductTBsRowDeleted" msprop:Generator_UserTableName="ProductTBs" msprop:Generator_RowChangedName="ProductTBsRowChanged" msprop:Generator_RowEvArgName="ProductTBsRowChangeEvent" msprop:Generator_RowClassName="ProductTBsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CoverValue" msprop:Generator_ColumnVarNameInTable="columnCoverValue" msprop:Generator_ColumnPropNameInRow="CoverValue" msprop:Generator_ColumnPropNameInTable="CoverValueColumn" msprop:Generator_UserColumnName="CoverValue" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Period" msprop:Generator_ColumnVarNameInTable="columnPeriod" msprop:Generator_ColumnPropNameInRow="Period" msprop:Generator_ColumnPropNameInTable="PeriodColumn" msprop:Generator_UserColumnName="Period" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ProductName" msprop:Generator_ColumnVarNameInTable="columnProductName" msprop:Generator_ColumnPropNameInRow="ProductName" msprop:Generator_ColumnPropNameInTable="ProductNameColumn" msprop:Generator_UserColumnName="ProductName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PremiumPrice" msprop:Generator_ColumnVarNameInTable="columnPremiumPrice" msprop:Generator_ColumnPropNameInRow="PremiumPrice" msprop:Generator_ColumnPropNameInTable="PremiumPriceColumn" msprop:Generator_UserColumnName="PremiumPrice" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

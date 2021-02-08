@@ -22,5 +22,7 @@ namespace Fim_Insura
             this.Hide();
             landing.Show();
         }
+
+
     }   
 }

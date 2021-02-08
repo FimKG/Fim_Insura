@@ -38,7 +38,7 @@ namespace Fim_Insura
             this.revProduct = new System.Windows.Forms.Button();
             this.clientProfile = new System.Windows.Forms.Button();
             this.insurProduct = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.dockedPanel = new System.Windows.Forms.Panel();
             this.panel_header.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -144,22 +144,22 @@ namespace Fim_Insura
             this.insurProduct.UseVisualStyleBackColor = true;
             this.insurProduct.Click += new System.EventHandler(this.insurProduct_Click);
             // 
-            // panel2
+            // dockedPanel
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Font = new System.Drawing.Font("Verdana", 9F);
-            this.panel2.Location = new System.Drawing.Point(268, 61);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(589, 407);
-            this.panel2.TabIndex = 4;
+            this.dockedPanel.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.dockedPanel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.dockedPanel.Font = new System.Drawing.Font("Verdana", 9F);
+            this.dockedPanel.Location = new System.Drawing.Point(268, 61);
+            this.dockedPanel.Name = "dockedPanel";
+            this.dockedPanel.Size = new System.Drawing.Size(589, 407);
+            this.dockedPanel.TabIndex = 4;
             // 
             // client_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(857, 503);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.dockedPanel);
             this.Controls.Add(this.clientProfile);
             this.Controls.Add(this.revProduct);
             this.Controls.Add(this.claim);
@@ -170,7 +170,6 @@ namespace Fim_Insura
             this.Name = "client_Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "client Main";
-            this.Load += new System.EventHandler(this.client_Main_Load);
             this.panel_header.ResumeLayout(false);
             this.panel_header.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -190,6 +189,6 @@ namespace Fim_Insura
         private System.Windows.Forms.Button revProduct;
         private System.Windows.Forms.Button clientProfile;
         private System.Windows.Forms.Button insurProduct;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel dockedPanel;
     }
 }

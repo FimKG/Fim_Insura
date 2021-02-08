@@ -82,6 +82,11 @@
     <Compile Include="Forms\Client Main\client_Profile.Designer.cs">
       <DependentUpon>client_Profile.cs</DependentUpon>
     </Compile>
+    <Compile Include="Insura_DBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Insura_DBDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\202102071107514_InitialCreate.cs" />
     <Compile Include="Migrations\202102071107514_InitialCreate.Designer.cs">
       <DependentUpon>202102071107514_InitialCreate.cs</DependentUpon>
@@ -313,6 +318,17 @@
     <EmbeddedResource Include="user_Control\UC Clients\UC_Rv_Product.resx">
       <DependentUpon>UC_Rv_Product.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Insura_DBDataSet.xsc">
+      <DependentUpon>Insura_DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Insura_DBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Insura_DBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Insura_DBDataSet.xss">
+      <DependentUpon>Insura_DBDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -17,36 +17,6 @@ namespace Fim_Insura
             InitializeComponent();
         }
 
-        private UC_InsuraPro insuraPro = new UC_InsuraPro()
-        {
-            Visible = false
-        };
-                
-        private UC_claim claimer = new UC_claim()
-        {
-            Visible = false
-        };
-                
-        private UC_profile prof = new UC_profile()
-        {
-            Visible = false
-        };
-
-        private UC_Rv_Product rv = new UC_Rv_Product()
-        {
-            Visible = false
-        };
-
-        private void VisualizeUC(Control value)
-        {
-            insuraPro.Visible = false;
-            claimer.Visible = false;
-            prof.Visible = false;
-            prof.Visible = false;
-            rv.Visible = false;
-
-            value.Visible = true;
-        }
         private void lbl_LogOut_Click(object sender, EventArgs e)
         {
             landing landing = new landing();
@@ -54,34 +24,60 @@ namespace Fim_Insura
             landing.Show();
         }
 
-        private void client_Main_Load(object sender, EventArgs e)
-        {
-            Controls.Add(insuraPro);
-            Controls.Add(claimer);
-            Controls.Add(prof);
-            Controls.Add(rv);
-        }
-
         private void insurProduct_Click(object sender, EventArgs e)
         {
-            //InsureProduct insura = new InsureProduct();
-            //insura.Show();
-            VisualizeUC(insuraPro);
+            if (!dockedPanel.Controls.Contains(UC_InsuraPro.Instance))
+            {
+                dockedPanel.Controls.Add(UC_InsuraPro.Instance);
+                UC_InsuraPro.Instance.Dock = DockStyle.Fill;
+                UC_InsuraPro.Instance.BringToFront();
+            }
+            else
+            {
+                UC_InsuraPro.Instance.BringToFront();
+            }
         }
 
         private void claim_Click(object sender, EventArgs e)
         {
-            VisualizeUC(claimer);
+            if (!dockedPanel.Controls.Contains(UC_claim.Instance))
+            {
+                dockedPanel.Controls.Add(UC_claim.Instance);
+                UC_claim.Instance.Dock = DockStyle.Fill;
+                UC_claim.Instance.BringToFront();
+            }
+            else
+            {
+                UC_claim.Instance.BringToFront();
+            }
         }
 
         private void revProduct_Click(object sender, EventArgs e)
         {
-            VisualizeUC(rv);
+            if (!dockedPanel.Controls.Contains(UC_Rv_Product.Instance))
+            {
+                dockedPanel.Controls.Add(UC_Rv_Product.Instance);
+                UC_Rv_Product.Instance.Dock = DockStyle.Fill;
+                UC_Rv_Product.Instance.BringToFront();
+            }
+            else
+            {
+                UC_Rv_Product.Instance.BringToFront();
+            }
         }
 
         private void clientProfile_Click(object sender, EventArgs e)
         {
-            VisualizeUC(prof);
+            if (!dockedPanel.Controls.Contains(UC_profile.Instance))
+            {
+                dockedPanel.Controls.Add(UC_profile.Instance);
+                UC_profile.Instance.Dock = DockStyle.Fill;
+                UC_profile.Instance.BringToFront();
+            }
+            else
+            {
+                UC_profile.Instance.BringToFront();
+            }
         }
     }
 }

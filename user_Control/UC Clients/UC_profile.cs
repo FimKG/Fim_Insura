@@ -14,5 +14,15 @@ namespace Fim_Insura.user_Control
         {
             InitializeComponent();
         }
+        public static UC_profile _instance;
+        public static UC_profile Instance
+        {
+            get
+            {
+                if (_instance == null)
+                    _instance = new UC_profile();
+                return _instance;
+            }
+        }
     }
 }
