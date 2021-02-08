@@ -11,6 +11,17 @@ namespace Fim_Insura.Forms
 {
     public partial class UC_InsuraPro : UserControl
     {
+        public static UC_InsuraPro _instance;
+        public static UC_InsuraPro Instance
+        {
+            get
+            {
+                if(_instance == null)
+                    _instance = new UC_InsuraPro();
+                return _instance;
+            }
+        }
+
         public UC_InsuraPro()
         {
             InitializeComponent();

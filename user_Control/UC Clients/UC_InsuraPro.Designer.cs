@@ -45,7 +45,7 @@ namespace Fim_Insura.Forms
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Verdana", 32.25F);
-            this.label2.Location = new System.Drawing.Point(103, 37);
+            this.label2.Location = new System.Drawing.Point(2, 41);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(448, 52);
             this.label2.TabIndex = 40;
@@ -64,7 +64,7 @@ namespace Fim_Insura.Forms
             "4000",
             "5000",
             "6000"});
-            this.cbCoverValue.Location = new System.Drawing.Point(176, 127);
+            this.cbCoverValue.Location = new System.Drawing.Point(93, 169);
             this.cbCoverValue.Name = "cbCoverValue";
             this.cbCoverValue.Size = new System.Drawing.Size(241, 26);
             this.cbCoverValue.TabIndex = 39;
@@ -74,7 +74,7 @@ namespace Fim_Insura.Forms
             this.btnInsured.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
             this.btnInsured.Font = new System.Drawing.Font("Verdana", 14.25F);
             this.btnInsured.ForeColor = System.Drawing.Color.White;
-            this.btnInsured.Location = new System.Drawing.Point(236, 341);
+            this.btnInsured.Location = new System.Drawing.Point(135, 345);
             this.btnInsured.Name = "btnInsured";
             this.btnInsured.Size = new System.Drawing.Size(117, 29);
             this.btnInsured.TabIndex = 38;
@@ -85,7 +85,7 @@ namespace Fim_Insura.Forms
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(46)))), ((int)(((byte)(15)))));
-            this.panel7.Location = new System.Drawing.Point(176, 190);
+            this.panel7.Location = new System.Drawing.Point(93, 234);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(240, 1);
             this.panel7.TabIndex = 37;
@@ -95,7 +95,7 @@ namespace Fim_Insura.Forms
             this.txtProductName.BackColor = System.Drawing.Color.White;
             this.txtProductName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtProductName.Font = new System.Drawing.Font("Verdana", 14.25F);
-            this.txtProductName.Location = new System.Drawing.Point(176, 165);
+            this.txtProductName.Location = new System.Drawing.Point(93, 206);
             this.txtProductName.Name = "txtProductName";
             this.txtProductName.Size = new System.Drawing.Size(240, 24);
             this.txtProductName.TabIndex = 36;
@@ -105,7 +105,7 @@ namespace Fim_Insura.Forms
             this.txtPolicyPeriod.BackColor = System.Drawing.Color.White;
             this.txtPolicyPeriod.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPolicyPeriod.Font = new System.Drawing.Font("Verdana", 14.25F);
-            this.txtPolicyPeriod.Location = new System.Drawing.Point(176, 206);
+            this.txtPolicyPeriod.Location = new System.Drawing.Point(93, 247);
             this.txtPolicyPeriod.Name = "txtPolicyPeriod";
             this.txtPolicyPeriod.Size = new System.Drawing.Size(240, 24);
             this.txtPolicyPeriod.TabIndex = 36;
@@ -114,7 +114,7 @@ namespace Fim_Insura.Forms
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(46)))), ((int)(((byte)(15)))));
-            this.panel1.Location = new System.Drawing.Point(176, 231);
+            this.panel1.Location = new System.Drawing.Point(93, 275);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(240, 1);
             this.panel1.TabIndex = 37;
@@ -123,7 +123,7 @@ namespace Fim_Insura.Forms
             // 
             this.lbltotal.AutoSize = true;
             this.lbltotal.Font = new System.Drawing.Font("Verdana", 14.25F);
-            this.lbltotal.Location = new System.Drawing.Point(192, 251);
+            this.lbltotal.Location = new System.Drawing.Point(100, 301);
             this.lbltotal.Name = "lbltotal";
             this.lbltotal.Size = new System.Drawing.Size(0, 23);
             this.lbltotal.TabIndex = 41;
@@ -135,7 +135,7 @@ namespace Fim_Insura.Forms
             this.lblError.Font = new System.Drawing.Font("Verdana", 12F);
             this.lblError.ForeColor = System.Drawing.Color.White;
             this.lblError.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.lblError.Location = new System.Drawing.Point(203, 310);
+            this.lblError.Location = new System.Drawing.Point(102, 314);
             this.lblError.Name = "lblError";
             this.lblError.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblError.Size = new System.Drawing.Size(0, 18);
@@ -155,7 +155,7 @@ namespace Fim_Insura.Forms
             this.Controls.Add(this.txtPolicyPeriod);
             this.Controls.Add(this.txtProductName);
             this.Name = "UC_InsuraPro";
-            this.Size = new System.Drawing.Size(583, 404);
+            this.Size = new System.Drawing.Size(450, 400);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -1,10 +1,13 @@
-﻿using System;
+﻿using Fim_Insura.Forms;
+using Fim_Insura.webApi;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using System.Linq;
 
 namespace Fim_Insura.user_Control
 {
@@ -13,6 +16,7 @@ namespace Fim_Insura.user_Control
         public UC_claim()
         {
             InitializeComponent();
+
         }
 
         private void cbCoverValue_SelectedIndexChanged(object sender, EventArgs e)
@@ -20,37 +24,31 @@ namespace Fim_Insura.user_Control
 
         }
 
+        public static UC_claim _instance;
+        public static UC_claim Instance
+        {
+            get
+            {
+                if (_instance == null)
+                    _instance = new UC_claim();
+                return _instance;
+            }
+        }
+
+        public void grid()
+        {
+
+            using (Insura_Context db = new Insura_Context())
+            {
+                gvClaim.DataSource = from product in db.productTB
+                            //where product.ProductName ==
+                            select product;
+                _ = gvClaim.DataBindings;
+
+            }
+        }
+
         private void btnInsured_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel7_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtPolicyPeriod_TextChanged(object sender, EventArgs e)
         {
 
         }
