@@ -16,5 +16,15 @@ namespace Fim_Insura.user_Control.UC_Admin
         {
             InitializeComponent();
         }
+        public static UC_viewPolicy _instance;
+        public static UC_viewPolicy Instance
+        {
+            get
+            {
+                if (_instance == null)
+                    _instance = new UC_viewPolicy();
+                return _instance;
+            }
+        }
     }
 }
