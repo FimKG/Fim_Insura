@@ -16,6 +16,16 @@ namespace Fim_Insura.user_Control.UC_Admin
         {
             InitializeComponent();
         }
+        public static UC_AddPolicy _instance;
+        public static UC_AddPolicy Instance
+        {
+            get
+            {
+                if (_instance == null)
+                    _instance = new UC_AddPolicy();
+                return _instance;
+            }
+        }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {

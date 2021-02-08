@@ -34,12 +34,12 @@ namespace Fim_Insura
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.dockedPanel = new System.Windows.Forms.Panel();
+            this.btnAddPolicy = new System.Windows.Forms.Button();
+            this.btnClientsView = new System.Windows.Forms.Button();
+            this.btnManage = new System.Windows.Forms.Button();
+            this.btnViewPolicy = new System.Windows.Forms.Button();
+            this.btnProfile = new System.Windows.Forms.Button();
             this.panel_header.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -101,77 +101,82 @@ namespace Fim_Insura
             this.label6.TabIndex = 16;
             this.label6.Text = "Product insurance";
             // 
-            // panel2
+            // dockedPanel
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Font = new System.Drawing.Font("Verdana", 9F);
-            this.panel2.Location = new System.Drawing.Point(268, 61);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(589, 407);
-            this.panel2.TabIndex = 2;
+            this.dockedPanel.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.dockedPanel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.dockedPanel.Font = new System.Drawing.Font("Verdana", 9F);
+            this.dockedPanel.Location = new System.Drawing.Point(268, 61);
+            this.dockedPanel.Name = "dockedPanel";
+            this.dockedPanel.Size = new System.Drawing.Size(589, 407);
+            this.dockedPanel.TabIndex = 2;
             // 
-            // button3
+            // btnAddPolicy
             // 
-            this.button3.Font = new System.Drawing.Font("Verdana", 11.25F);
-            this.button3.Location = new System.Drawing.Point(52, 258);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(211, 33);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Add Policies";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnAddPolicy.Font = new System.Drawing.Font("Verdana", 11.25F);
+            this.btnAddPolicy.Location = new System.Drawing.Point(52, 258);
+            this.btnAddPolicy.Name = "btnAddPolicy";
+            this.btnAddPolicy.Size = new System.Drawing.Size(211, 33);
+            this.btnAddPolicy.TabIndex = 4;
+            this.btnAddPolicy.Text = "Add Policies";
+            this.btnAddPolicy.UseVisualStyleBackColor = true;
+            this.btnAddPolicy.Click += new System.EventHandler(this.btnAddPolicy_Click);
             // 
-            // button2
+            // btnClientsView
             // 
-            this.button2.Font = new System.Drawing.Font("Verdana", 11.25F);
-            this.button2.Location = new System.Drawing.Point(52, 209);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(211, 33);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "View Clients";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnClientsView.Font = new System.Drawing.Font("Verdana", 11.25F);
+            this.btnClientsView.Location = new System.Drawing.Point(52, 209);
+            this.btnClientsView.Name = "btnClientsView";
+            this.btnClientsView.Size = new System.Drawing.Size(211, 33);
+            this.btnClientsView.TabIndex = 5;
+            this.btnClientsView.Text = "View Clients";
+            this.btnClientsView.UseVisualStyleBackColor = true;
+            this.btnClientsView.Click += new System.EventHandler(this.btnClientsView_Click);
             // 
-            // button1
+            // btnManage
             // 
-            this.button1.Font = new System.Drawing.Font("Verdana", 11.25F);
-            this.button1.Location = new System.Drawing.Point(52, 158);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(211, 33);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Manage Clients";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnManage.Font = new System.Drawing.Font("Verdana", 11.25F);
+            this.btnManage.Location = new System.Drawing.Point(52, 158);
+            this.btnManage.Name = "btnManage";
+            this.btnManage.Size = new System.Drawing.Size(211, 33);
+            this.btnManage.TabIndex = 6;
+            this.btnManage.Text = "Manage Clients";
+            this.btnManage.UseVisualStyleBackColor = true;
+            this.btnManage.Click += new System.EventHandler(this.btnManage_Click);
             // 
-            // button4
+            // btnViewPolicy
             // 
-            this.button4.Font = new System.Drawing.Font("Verdana", 11.25F);
-            this.button4.Location = new System.Drawing.Point(52, 310);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(211, 33);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "View Policies";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnViewPolicy.Font = new System.Drawing.Font("Verdana", 11.25F);
+            this.btnViewPolicy.Location = new System.Drawing.Point(52, 310);
+            this.btnViewPolicy.Name = "btnViewPolicy";
+            this.btnViewPolicy.Size = new System.Drawing.Size(211, 33);
+            this.btnViewPolicy.TabIndex = 4;
+            this.btnViewPolicy.Text = "View Policies";
+            this.btnViewPolicy.UseVisualStyleBackColor = true;
+            this.btnViewPolicy.Click += new System.EventHandler(this.btnViewPolicy_Click);
             // 
-            // button5
+            // btnProfile
             // 
-            this.button5.Font = new System.Drawing.Font("Verdana", 11.25F);
-            this.button5.Location = new System.Drawing.Point(52, 361);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(211, 33);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Profile";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnProfile.Font = new System.Drawing.Font("Verdana", 11.25F);
+            this.btnProfile.Location = new System.Drawing.Point(52, 361);
+            this.btnProfile.Name = "btnProfile";
+            this.btnProfile.Size = new System.Drawing.Size(211, 33);
+            this.btnProfile.TabIndex = 4;
+            this.btnProfile.Text = "Profile";
+            this.btnProfile.UseVisualStyleBackColor = true;
+            this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
             // 
             // admin_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(857, 503);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.btnProfile);
+            this.Controls.Add(this.btnViewPolicy);
+            this.Controls.Add(this.btnAddPolicy);
+            this.Controls.Add(this.btnClientsView);
+            this.Controls.Add(this.btnManage);
+            this.Controls.Add(this.dockedPanel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel_header);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -193,11 +198,11 @@ namespace Fim_Insura
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Panel dockedPanel;
+        private System.Windows.Forms.Button btnAddPolicy;
+        private System.Windows.Forms.Button btnClientsView;
+        private System.Windows.Forms.Button btnManage;
+        private System.Windows.Forms.Button btnViewPolicy;
+        private System.Windows.Forms.Button btnProfile;
     }
 }
