@@ -95,7 +95,11 @@ namespace Fim_Insura
                         {
                             db.SaveChanges();
                             lblError.Text = "Successfully registered";
-                        }
+                    }
+                    else
+                    {
+                        lblError.Text = "Email Already taken";
+                    }
                      
                     //}
                 }

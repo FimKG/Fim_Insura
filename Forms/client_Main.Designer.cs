@@ -147,7 +147,6 @@ namespace Fim_Insura
             // dockedPanel
             // 
             this.dockedPanel.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.dockedPanel.Dock = System.Windows.Forms.DockStyle.Right;
             this.dockedPanel.Font = new System.Drawing.Font("Verdana", 9F);
             this.dockedPanel.Location = new System.Drawing.Point(268, 61);
             this.dockedPanel.Name = "dockedPanel";
