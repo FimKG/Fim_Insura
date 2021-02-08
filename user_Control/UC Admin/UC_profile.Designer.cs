@@ -40,6 +40,8 @@ namespace Fim_Insura.user_Control.UC_Admin
             this.txtnames = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtTelno = new System.Windows.Forms.TextBox();
+            this.dockedPanel = new System.Windows.Forms.Panel();
+            this.dockedPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnRegister
@@ -47,7 +49,7 @@ namespace Fim_Insura.user_Control.UC_Admin
             this.btnRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
             this.btnRegister.Font = new System.Drawing.Font("Verdana", 14.25F);
             this.btnRegister.ForeColor = System.Drawing.Color.White;
-            this.btnRegister.Location = new System.Drawing.Point(280, 303);
+            this.btnRegister.Location = new System.Drawing.Point(183, 307);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(170, 29);
             this.btnRegister.TabIndex = 27;
@@ -57,7 +59,7 @@ namespace Fim_Insura.user_Control.UC_Admin
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(46)))), ((int)(((byte)(15)))));
-            this.panel3.Location = new System.Drawing.Point(280, 168);
+            this.panel3.Location = new System.Drawing.Point(183, 172);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(240, 1);
             this.panel3.TabIndex = 22;
@@ -65,7 +67,7 @@ namespace Fim_Insura.user_Control.UC_Admin
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(46)))), ((int)(((byte)(15)))));
-            this.panel2.Location = new System.Drawing.Point(280, 137);
+            this.panel2.Location = new System.Drawing.Point(183, 141);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(240, 1);
             this.panel2.TabIndex = 23;
@@ -73,7 +75,7 @@ namespace Fim_Insura.user_Control.UC_Admin
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(46)))), ((int)(((byte)(15)))));
-            this.panel1.Location = new System.Drawing.Point(280, 105);
+            this.panel1.Location = new System.Drawing.Point(183, 109);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(240, 1);
             this.panel1.TabIndex = 24;
@@ -81,7 +83,7 @@ namespace Fim_Insura.user_Control.UC_Admin
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(46)))), ((int)(((byte)(15)))));
-            this.panel5.Location = new System.Drawing.Point(280, 236);
+            this.panel5.Location = new System.Drawing.Point(183, 240);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(240, 1);
             this.panel5.TabIndex = 25;
@@ -89,7 +91,7 @@ namespace Fim_Insura.user_Control.UC_Admin
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(46)))), ((int)(((byte)(15)))));
-            this.panel4.Location = new System.Drawing.Point(280, 205);
+            this.panel4.Location = new System.Drawing.Point(183, 209);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(240, 1);
             this.panel4.TabIndex = 26;
@@ -99,7 +101,7 @@ namespace Fim_Insura.user_Control.UC_Admin
             this.txtEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
             this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtEmail.Font = new System.Drawing.Font("Verdana", 14.25F);
-            this.txtEmail.Location = new System.Drawing.Point(280, 143);
+            this.txtEmail.Location = new System.Drawing.Point(183, 147);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(240, 24);
             this.txtEmail.TabIndex = 17;
@@ -110,7 +112,7 @@ namespace Fim_Insura.user_Control.UC_Admin
             this.txtLastname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
             this.txtLastname.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtLastname.Font = new System.Drawing.Font("Verdana", 14.25F);
-            this.txtLastname.Location = new System.Drawing.Point(280, 112);
+            this.txtLastname.Location = new System.Drawing.Point(183, 116);
             this.txtLastname.Name = "txtLastname";
             this.txtLastname.Size = new System.Drawing.Size(240, 24);
             this.txtLastname.TabIndex = 18;
@@ -121,7 +123,7 @@ namespace Fim_Insura.user_Control.UC_Admin
             this.txtnames.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
             this.txtnames.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtnames.Font = new System.Drawing.Font("Verdana", 14.25F);
-            this.txtnames.Location = new System.Drawing.Point(280, 80);
+            this.txtnames.Location = new System.Drawing.Point(183, 84);
             this.txtnames.Name = "txtnames";
             this.txtnames.Size = new System.Drawing.Size(240, 24);
             this.txtnames.TabIndex = 19;
@@ -132,7 +134,7 @@ namespace Fim_Insura.user_Control.UC_Admin
             this.txtPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPassword.Font = new System.Drawing.Font("Verdana", 14.25F);
-            this.txtPassword.Location = new System.Drawing.Point(280, 211);
+            this.txtPassword.Location = new System.Drawing.Point(183, 215);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(240, 24);
             this.txtPassword.TabIndex = 20;
@@ -143,31 +145,44 @@ namespace Fim_Insura.user_Control.UC_Admin
             this.txtTelno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(104)))));
             this.txtTelno.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTelno.Font = new System.Drawing.Font("Verdana", 14.25F);
-            this.txtTelno.Location = new System.Drawing.Point(280, 180);
+            this.txtTelno.Location = new System.Drawing.Point(183, 184);
             this.txtTelno.Name = "txtTelno";
             this.txtTelno.Size = new System.Drawing.Size(240, 24);
             this.txtTelno.TabIndex = 21;
             this.txtTelno.Text = "Contact Number";
             // 
+            // dockedPanel
+            // 
+            this.dockedPanel.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dockedPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.dockedPanel.Controls.Add(this.txtnames);
+            this.dockedPanel.Controls.Add(this.btnRegister);
+            this.dockedPanel.Controls.Add(this.txtTelno);
+            this.dockedPanel.Controls.Add(this.panel3);
+            this.dockedPanel.Controls.Add(this.txtPassword);
+            this.dockedPanel.Controls.Add(this.panel2);
+            this.dockedPanel.Controls.Add(this.txtLastname);
+            this.dockedPanel.Controls.Add(this.panel1);
+            this.dockedPanel.Controls.Add(this.txtEmail);
+            this.dockedPanel.Controls.Add(this.panel5);
+            this.dockedPanel.Controls.Add(this.panel4);
+            this.dockedPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dockedPanel.Font = new System.Drawing.Font("Verdana", 9F);
+            this.dockedPanel.Location = new System.Drawing.Point(0, 0);
+            this.dockedPanel.Name = "dockedPanel";
+            this.dockedPanel.Size = new System.Drawing.Size(589, 407);
+            this.dockedPanel.TabIndex = 28;
+            // 
             // UC_profile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.btnRegister);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.txtEmail);
-            this.Controls.Add(this.txtLastname);
-            this.Controls.Add(this.txtnames);
-            this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.txtTelno);
+            this.Controls.Add(this.dockedPanel);
             this.Name = "UC_profile";
-            this.Size = new System.Drawing.Size(583, 404);
+            this.Size = new System.Drawing.Size(589, 407);
+            this.dockedPanel.ResumeLayout(false);
+            this.dockedPanel.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -184,5 +199,6 @@ namespace Fim_Insura.user_Control.UC_Admin
         private System.Windows.Forms.TextBox txtnames;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.TextBox txtTelno;
+        private System.Windows.Forms.Panel dockedPanel;
     }
 }

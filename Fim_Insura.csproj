@@ -76,21 +76,10 @@
     <Compile Include="Forms\client_Main.Designer.cs">
       <DependentUpon>client_Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Client Main\client_Profile.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Client Main\client_Profile.Designer.cs">
-      <DependentUpon>client_Profile.cs</DependentUpon>
-    </Compile>
     <Compile Include="Insura_DBDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Insura_DBDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Insura_DBDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Insura_DBDataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="Migrations\202102071107514_InitialCreate.cs" />
     <Compile Include="Migrations\202102071107514_InitialCreate.Designer.cs">
@@ -110,12 +99,6 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Insura_Context.cs" />
-    <Compile Include="Forms\Client Main\InsureProduct.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Client Main\InsureProduct.Designer.cs">
-      <DependentUpon>InsureProduct.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\landing.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,18 +110,6 @@
     </Compile>
     <Compile Include="Forms\login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Admin Main\manage_Client.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Admin Main\manage_Client.Designer.cs">
-      <DependentUpon>manage_Client.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Client Main\myPolicy.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Client Main\myPolicy.Designer.cs">
-      <DependentUpon>myPolicy.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\policyTypeReg.cs">
       <SubType>Form</SubType>
@@ -152,23 +123,11 @@
     <Compile Include="Forms\register.Designer.cs">
       <DependentUpon>register.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Client Main\review_Product.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Client Main\review_Product.Designer.cs">
-      <DependentUpon>review_Product.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\splash.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\splash.Designer.cs">
       <DependentUpon>splash.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Client Main\submit_Claims.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Client Main\submit_Claims.Designer.cs">
-      <DependentUpon>submit_Claims.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\BaseTable.cs" />
     <Compile Include="Program.cs" />
@@ -242,23 +201,11 @@
     <EmbeddedResource Include="Forms\client_Main.resx">
       <DependentUpon>client_Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Client Main\client_Profile.resx">
-      <DependentUpon>client_Profile.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Client Main\InsureProduct.resx">
-      <DependentUpon>InsureProduct.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\landing.resx">
       <DependentUpon>landing.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\login.resx">
       <DependentUpon>login.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Admin Main\manage_Client.resx">
-      <DependentUpon>manage_Client.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Client Main\myPolicy.resx">
-      <DependentUpon>myPolicy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\policyTypeReg.resx">
       <DependentUpon>policyTypeReg.cs</DependentUpon>
@@ -266,14 +213,8 @@
     <EmbeddedResource Include="Forms\register.resx">
       <DependentUpon>register.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Client Main\review_Product.resx">
-      <DependentUpon>review_Product.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\splash.resx">
       <DependentUpon>splash.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Client Main\submit_Claims.resx">
-      <DependentUpon>submit_Claims.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202102071107514_InitialCreate.resx">
       <DependentUpon>202102071107514_InitialCreate.cs</DependentUpon>
@@ -333,17 +274,6 @@
     </None>
     <None Include="Insura_DBDataSet.xss">
       <DependentUpon>Insura_DBDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="Insura_DBDataSet1.xsc">
-      <DependentUpon>Insura_DBDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="Insura_DBDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Insura_DBDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Insura_DBDataSet1.xss">
-      <DependentUpon>Insura_DBDataSet1.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

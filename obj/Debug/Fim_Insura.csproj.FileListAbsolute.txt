@@ -72,3 +72,38 @@ F:\www\FimKG\Fim_Insura\obj\Debug\Fim_Insura.csproj.CopyComplete
 F:\www\FimKG\Fim_Insura\obj\Debug\Fim_Insura.Migrations.addedTables.resources
 F:\www\FimKG\Fim_Insura\obj\Debug\Fim_Insura.Migrations.fieldAdded.resources
 F:\www\FimKG\Fim_Insura\obj\Debug\Fim_Insura.Migrations.producTable.resources
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\bin\Debug\Fim_Insura.exe.config
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\bin\Debug\Fim_Insura.exe
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\bin\Debug\Fim_Insura.pdb
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\bin\Debug\EntityFramework.dll
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\bin\Debug\EntityFramework.SqlServer.dll
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\bin\Debug\EntityFramework.xml
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\bin\Debug\EntityFramework.SqlServer.xml
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\obj\Debug\Fim_Insura.csprojAssemblyReference.cache
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\obj\Debug\Fim_Insura.admin_Main.resources
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\obj\Debug\Fim_Insura.Forms.client_login.resources
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\obj\Debug\Fim_Insura.client_Main.resources
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\obj\Debug\Fim_Insura.Forms.landing.resources
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\obj\Debug\Fim_Insura.login.resources
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\obj\Debug\Fim_Insura.policyTypeReg.resources
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\obj\Debug\Fim_Insura.register.resources
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\obj\Debug\Fim_Insura.splash.resources
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\obj\Debug\Fim_Insura.Migrations.InitialCreate.resources
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\obj\Debug\Fim_Insura.Migrations.addedTables.resources
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\obj\Debug\Fim_Insura.Migrations.fieldAdded.resources
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\obj\Debug\Fim_Insura.Migrations.producTable.resources
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\obj\Debug\Fim_Insura.Properties.Resources.resources
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\obj\Debug\Fim_Insura.user_Control.UC_Admin.UC_AddPolicy.resources
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\obj\Debug\Fim_Insura.user_Control.UC_Admin.UC_manage.resources
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\obj\Debug\Fim_Insura.user_Control.UC_Admin.UC_profile.resources
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\obj\Debug\Fim_Insura.user_Control.UC_Admin.UC_viewClients.resources
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\obj\Debug\Fim_Insura.user_Control.UC_Admin.UC_viewPolicy.resources
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\obj\Debug\Fim_Insura.user_Control.UC_claim.resources
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\obj\Debug\Fim_Insura.Forms.UC_InsuraPro.resources
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\obj\Debug\Fim_Insura.user_Control.UC_profile.resources
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\obj\Debug\Fim_Insura.user_Control.UC_Rv_Product.resources
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\obj\Debug\Fim_Insura.csproj.GenerateResource.cache
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\obj\Debug\Fim_Insura.csproj.CoreCompileInputs.cache
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\obj\Debug\Fim_Insura.csproj.CopyComplete
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\obj\Debug\Fim_Insura.exe
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\obj\Debug\Fim_Insura.pdb

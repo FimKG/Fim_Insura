@@ -135,7 +135,7 @@ namespace Fim_Insura.Forms
             this.lblError.Font = new System.Drawing.Font("Verdana", 12F);
             this.lblError.ForeColor = System.Drawing.Color.White;
             this.lblError.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.lblError.Location = new System.Drawing.Point(102, 314);
+            this.lblError.Location = new System.Drawing.Point(100, 124);
             this.lblError.Name = "lblError";
             this.lblError.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblError.Size = new System.Drawing.Size(0, 18);
@@ -156,6 +156,7 @@ namespace Fim_Insura.Forms
             this.Controls.Add(this.txtProductName);
             this.Name = "UC_InsuraPro";
             this.Size = new System.Drawing.Size(450, 400);
+            this.Load += new System.EventHandler(this.UC_InsuraPro_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

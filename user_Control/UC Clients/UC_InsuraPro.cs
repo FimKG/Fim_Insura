@@ -41,12 +41,17 @@ namespace Fim_Insura.Forms
             }
             else
             {
-                lbltotal.Text = "Your Premium is valued at R" + ((((coverValue * 0.25) + coverValue)/12) * double.Parse(txtPolicyPeriod.Text)).ToString();
+                double d = (((coverValue * 0.25) + coverValue) / 12 * double.Parse(txtPolicyPeriod.Text));
+                lbltotal.Text = "Your Premium is valued at R" + Math.Round(d, 2);
+                lbltotal.BackColor = Color.FromArgb(255, 255, 255);
             }
         }
 
         private void btnInsured_Click(object sender, EventArgs e)
         {
+
+            if (cbCoverValue.SelectedValue != null && txtPolicyPeriod.Text != "" && txtProductName.Text != "")
+            {
             double coverValue = Convert.ToDouble(cbCoverValue.SelectedItem);
             string total = (((((coverValue * 0.25) + coverValue) / 12) * double.Parse(txtPolicyPeriod.Text)).ToString()).ToString();
             using (Insura_Context db = new Insura_Context())
@@ -56,10 +61,29 @@ namespace Fim_Insura.Forms
                     CoverValue = (string)cbCoverValue.SelectedItem,
                     Period = txtPolicyPeriod.Text,
                     ProductName = txtProductName.Text,
-                    PremiumPrice = total
+                    PremiumPrice = total,
+                    AmendedOn = DateTime.Now,
+                    CreatedOn = DateTime.Now
 
                 };
+                db.productTB.Add(productTB);
+                if (db.ChangeTracker.HasChanges())
+                {
+                    db.SaveChanges();
+                    lblError.Text = "Successfully Insured";
+                }
+                
             }
+            }
+            else
+            {
+                lblError.Text = "Invalid Inputs Or Empty fields";
+            }
+        }
+
+        private void UC_InsuraPro_Load(object sender, EventArgs e)
+        {
+            cbCoverValue.SelectedItem = 0;
         }
     }
 }
