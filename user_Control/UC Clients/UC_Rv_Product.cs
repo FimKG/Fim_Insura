@@ -28,36 +28,15 @@ namespace Fim_Insura.user_Control
                 return _instance;
             }
         }
-        //ListViewItem list = new ListViewItem();
-        //list.SubItems.Add(prod.Period);
-        //        list.SubItems.Add(prod.PremiumPrice);
-        //        list.SubItems.Add(prod.ProductName);
-        //        Control.Add(list);
-        //private void UC_Rv_Product_Load(object sender, EventArgs e)
-        //{
-        //    //this.dgvProdList
-        //    //using (Insura_Context db = new Insura_Context())
-        //    //{
-        //    //    var query = (from product in db.productTB
-        //    //                 select product).ToList();
-        //    //    //var prod = query.FirstOrDefault<ProductTB>();
-
-
-        //    //    foreach (var listItem in query)
-        //    //    {
-
-        //    //    }
-        //    //}
-        //}
 
         private void UC_Rv_Product_Load(object sender, EventArgs e)
         {
             using (Insura_Context db = new Insura_Context())
             {
-                List<DataGridViewRow> list = new List<DataGridViewRow>(
-                from DataGridViewRow product in db.productTB
-                select product
-                );
+                var query = (from product in db.productTB
+                             select product).ToList();
+
+                dgvProdList.DataSource = query;
             }
         }
     }
