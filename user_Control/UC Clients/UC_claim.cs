@@ -16,12 +16,17 @@ namespace Fim_Insura.user_Control
         public UC_claim()
         {
             InitializeComponent();
-
         }
-
+        Insura_Context db = new Insura_Context();
         private void cbCoverValue_SelectedIndexChanged(object sender, EventArgs e)
         {
+            
+            var query = (from product in db.productTB
+                         where product.ProductName == cbCoverValue.Text
+                         select product).ToList();
 
+            gvClaim.DataSource = query;
+            //DataBind();
         }
 
         public static UC_claim _instance;
@@ -35,21 +40,48 @@ namespace Fim_Insura.user_Control
             }
         }
 
-        public void grid()
-        {
+        //public void grid(object cbName)
+        //{
+        //        var query = (from product in db.productTB
+        //                     where product.ProductName == cbName
+        //                     select product).ToList();
 
-            using (Insura_Context db = new Insura_Context())
-            {
-                gvClaim.DataSource = from product in db.productTB
-                            //where product.ProductName ==
-                            select product;
-                _ = gvClaim.DataBindings;
-
-            }
-        }
+        //        gvClaim.DataSource = query;
+        //    //DataBind();
+        //}
 
         private void btnInsured_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void UC_claim_Load(object sender, EventArgs e)
+        {
+
+            //if (!IsPostBack)
+            //{
+                var query = (from product in db.productTB
+                             select new
+                             {
+                                 product.ProductName
+                             });
+            //}
+
+                //cbCoverValue.Items.Add(query);
+
+            
+        }
+
+        private void fillByToolStripButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.productTBsTableAdapter1.FillBy(this.insura_DBDataSet.ProductTBs);
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
 
         }
     }

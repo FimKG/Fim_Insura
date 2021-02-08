@@ -87,6 +87,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Insura_DBDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Insura_DBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Insura_DBDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\202102071107514_InitialCreate.cs" />
     <Compile Include="Migrations\202102071107514_InitialCreate.Designer.cs">
       <DependentUpon>202102071107514_InitialCreate.cs</DependentUpon>
@@ -328,6 +333,17 @@
     </None>
     <None Include="Insura_DBDataSet.xss">
       <DependentUpon>Insura_DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Insura_DBDataSet1.xsc">
+      <DependentUpon>Insura_DBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Insura_DBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Insura_DBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Insura_DBDataSet1.xss">
+      <DependentUpon>Insura_DBDataSet1.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
