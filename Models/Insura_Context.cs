@@ -20,6 +20,7 @@ namespace Fim_Insura.Forms
         public virtual DbSet<ClientTB> ClientTB { get; set; }
         public virtual DbSet<AdminTB> AdminTB { get; set; }
         public virtual DbSet<ProductTB> ProductTB { get; set; }
+        public virtual DbSet<ClaimTB> ClaimTB { get; set; }
 
    
             // Add a DbSet for each entity type that you want to include in your model. For more information 

@@ -108,3 +108,4 @@ D:\Platform Design\web mockup\www\FimKG\Fim_Insura\obj\Debug\Fim_Insura.csproj.C
 D:\Platform Design\web mockup\www\FimKG\Fim_Insura\obj\Debug\Fim_Insura.exe
 D:\Platform Design\web mockup\www\FimKG\Fim_Insura\obj\Debug\Fim_Insura.pdb
 D:\Platform Design\web mockup\www\FimKG\Fim_Insura\obj\Debug\Fim_Insura.Migrations.naminguppeCase.resources
+D:\Platform Design\web mockup\www\FimKG\Fim_Insura\obj\Debug\Fim_Insura.Migrations.ClaimTB.resources

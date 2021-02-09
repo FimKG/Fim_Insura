@@ -33,6 +33,7 @@ namespace Fim_Insura.user_Control
             this.cbCoverValue = new System.Windows.Forms.ComboBox();
             this.btnInsured = new System.Windows.Forms.Button();
             this.gvClaim = new System.Windows.Forms.DataGridView();
+            this.lblError = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.gvClaim)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,11 +80,26 @@ namespace Fim_Insura.user_Control
             this.gvClaim.RowTemplate.Height = 25;
             this.gvClaim.Size = new System.Drawing.Size(350, 155);
             this.gvClaim.TabIndex = 50;
+            this.gvClaim.SelectionChanged += new System.EventHandler(this.gvClaim_SelectionChanged);
+            // 
+            // lblError
+            // 
+            this.lblError.AutoSize = true;
+            this.lblError.BackColor = System.Drawing.Color.Transparent;
+            this.lblError.Font = new System.Drawing.Font("Verdana", 12F);
+            this.lblError.ForeColor = System.Drawing.Color.White;
+            this.lblError.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.lblError.Location = new System.Drawing.Point(98, 95);
+            this.lblError.Name = "lblError";
+            this.lblError.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblError.Size = new System.Drawing.Size(0, 18);
+            this.lblError.TabIndex = 51;
             // 
             // UC_claim
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lblError);
             this.Controls.Add(this.gvClaim);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cbCoverValue);
@@ -102,5 +118,6 @@ namespace Fim_Insura.user_Control
         private System.Windows.Forms.ComboBox cbCoverValue;
         private System.Windows.Forms.Button btnInsured;
         private System.Windows.Forms.DataGridView gvClaim;
+        private System.Windows.Forms.Label lblError;
     }
 }
