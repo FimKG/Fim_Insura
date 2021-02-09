@@ -12,23 +12,7 @@ using System.Linq;
 namespace Fim_Insura.user_Control
 {
     public partial class UC_claim : UserControl
-    {
-        public UC_claim()
-        {
-            InitializeComponent();
-        }
-        Insura_Context db = new Insura_Context();
-        private void cbCoverValue_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-            var query = (from product in db.productTB
-                         where product.ProductName == cbCoverValue.Text
-                         select product).ToList();
-
-            gvClaim.DataSource = query;
-            //DataBind();
-        }
-
+    {        
         public static UC_claim _instance;
         public static UC_claim Instance
         {
@@ -40,36 +24,44 @@ namespace Fim_Insura.user_Control
             }
         }
 
-        //public void grid(object cbName)
-        //{
-        //        var query = (from product in db.productTB
-        //                     where product.ProductName == cbName
-        //                     select product).ToList();
+        Insura_Context db = new Insura_Context();
+        ProductTB pt = new ProductTB();
 
-        //        gvClaim.DataSource = query;
-        //    //DataBind();
-        //}
+        public UC_claim()
+        {
+            InitializeComponent();
+            cbCoverValue.DataSource = (from product in db.ProductTB
+                         select product).ToList();
+            //cbCoverValue.ValueMember = "Guid.NewGuid()";
+            cbCoverValue.DisplayMember = "ProductName";
+        }
+
+        public void grid(string cbName)
+        {
+            var query = (from product in db.ProductTB
+                         where product.Id == Guid.NewGuid()
+                         select new
+                         {
+                             product.ProductName,
+                             product.Period,
+                             product.PremiumPrice
+                         }).ToList();
+
+            gvClaim.DataSource = query;
+        }
 
         private void btnInsured_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void UC_claim_Load(object sender, EventArgs e)
+        private void cbCoverValue_SelectionChangeCommitted(object sender, EventArgs e)
         {
-
-            //if (!IsPostBack)
-            //{
-                var query = (from product in db.productTB
-                             select new
-                             {
-                                 product.ProductName
-                             });
-            //}
-
-                //cbCoverValue.Items.Add(query);
-
-            
+            //var query = from cb in db.ProductTB
+            //            where cb.Id == pt.Id
+            //            select cb;
+            //gvClaim.DataSource = query.ToList();
+            grid((cbCoverValue.ValueMember));
         }
     }
 }

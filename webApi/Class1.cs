@@ -24,3 +24,4 @@ namespace Fim_Insura.webApi
 //https://www.c-sharpcorner.com/article/entity-framework-code-first-and-migrations-part-two/
 //https://www.worldbestlearningcenter.com/index_files/csharp-linq-window-form.htm
 //https://www.aspsnippets.com/Articles/Select-Insert-Edit-Update-and-Delete-in-GridView-using-LINQ-to-SQL-in-ASPNet.aspx
+//https://www.c-sharpcorner.com/UploadFile/3d39b4/simple-select-insert-update-and-delete-using-linq-to-sql/

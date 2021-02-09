@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Fim_Insura.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -23,6 +24,11 @@ namespace Fim_Insura.user_Control
                     _instance = new UC_profile();
                 return _instance;
             }
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            Insura_Context db = new Insura_Context();
         }
     }
 }

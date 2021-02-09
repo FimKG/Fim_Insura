@@ -90,7 +90,7 @@ namespace Fim_Insura
                     //}
                     //else
                     //{
-                        db.adminTB.Add(admintb);
+                        db.AdminTB.Add(admintb);
                         if (db.ChangeTracker.HasChanges())
                         {
                             db.SaveChanges();

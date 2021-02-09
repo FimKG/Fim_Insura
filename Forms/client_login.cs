@@ -41,7 +41,7 @@ namespace Fim_Insura.Forms
         {
             using (Insura_Context db = new Insura_Context())
             {
-                var query = from log in db.clientTB
+                var query = from log in db.ClientTB
                             where log.Email == txtUsername.Text && log.Password == txtPassword.Text
                             select log;
                 var clients = query.FirstOrDefault<ClientTB>();

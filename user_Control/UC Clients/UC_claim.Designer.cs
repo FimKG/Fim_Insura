@@ -56,7 +56,7 @@ namespace Fim_Insura.user_Control
             this.cbCoverValue.Name = "cbCoverValue";
             this.cbCoverValue.Size = new System.Drawing.Size(241, 26);
             this.cbCoverValue.TabIndex = 48;
-            this.cbCoverValue.SelectedIndexChanged += new System.EventHandler(this.cbCoverValue_SelectedIndexChanged);
+            this.cbCoverValue.SelectionChangeCommitted += new System.EventHandler(this.cbCoverValue_SelectionChangeCommitted);
             // 
             // btnInsured
             // 
@@ -65,9 +65,9 @@ namespace Fim_Insura.user_Control
             this.btnInsured.ForeColor = System.Drawing.Color.White;
             this.btnInsured.Location = new System.Drawing.Point(176, 339);
             this.btnInsured.Name = "btnInsured";
-            this.btnInsured.Size = new System.Drawing.Size(117, 29);
+            this.btnInsured.Size = new System.Drawing.Size(117, 38);
             this.btnInsured.TabIndex = 47;
-            this.btnInsured.Text = "Insured";
+            this.btnInsured.Text = "Claim";
             this.btnInsured.UseVisualStyleBackColor = false;
             this.btnInsured.Click += new System.EventHandler(this.btnInsured_Click);
             // 
@@ -90,7 +90,6 @@ namespace Fim_Insura.user_Control
             this.Controls.Add(this.btnInsured);
             this.Name = "UC_claim";
             this.Size = new System.Drawing.Size(450, 400);
-            this.Load += new System.EventHandler(this.UC_claim_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gvClaim)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
