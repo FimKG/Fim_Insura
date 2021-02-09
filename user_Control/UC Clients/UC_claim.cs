@@ -60,7 +60,6 @@ namespace Fim_Insura.user_Control
                 CreatedOn = DateTime.Now
 
             };
-            lblError.Text = prodName + "-----" + primPrice;
 
             db.ClaimTB.Add(cliams);
             if (db.ChangeTracker.HasChanges())

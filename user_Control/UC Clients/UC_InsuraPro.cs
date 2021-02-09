@@ -50,7 +50,7 @@ namespace Fim_Insura.Forms
         private void btnInsured_Click(object sender, EventArgs e)
         {
 
-            if (cbCoverValue.SelectedIndex != null && txtPolicyPeriod.Text != "" && txtProductName.Text != "")
+            if (cbCoverValue.SelectedIndex != 0 && txtPolicyPeriod.Text != "" && txtProductName.Text != "")
             {
             double coverValue = Convert.ToDouble(cbCoverValue.SelectedItem);
             double total = ((coverValue * 0.25) + coverValue) / 12 * double.Parse(txtPolicyPeriod.Text);
