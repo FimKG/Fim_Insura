@@ -32,14 +32,13 @@ namespace Fim_Insura.user_Control
             InitializeComponent();
             cbCoverValue.DataSource = (from product in db.ProductTB
                          select product).ToList();
-            //cbCoverValue.ValueMember = "Guid.NewGuid()";
             cbCoverValue.DisplayMember = "ProductName";
         }
 
-        public void grid(string cbName)
+        public void grid(Guid cbName)
         {
             var query = (from product in db.ProductTB
-                         where product.Id == Guid.NewGuid()
+                         where product.Id == cbName
                          select new
                          {
                              product.ProductName,
@@ -50,18 +49,44 @@ namespace Fim_Insura.user_Control
             gvClaim.DataSource = query;
         }
 
+        public void claim(string prodName, string primPrice)
+        {
+            ClaimTB cliams = new ClaimTB()
+            {
+                Id = Guid.NewGuid(),
+                ProductName = prodName,
+                PremiumPrice = primPrice,
+                AmendedOn = DateTime.Now,
+                CreatedOn = DateTime.Now
+
+            };
+            lblError.Text = prodName + "-----" + primPrice;
+
+            db.ClaimTB.Add(cliams);
+            if (db.ChangeTracker.HasChanges())
+            {
+                db.SaveChanges();
+                lblError.Text = "Successfully registered";
+            }
+        }
+        private void cbCoverValue_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+          var temp= (ProductTB)  cbCoverValue.SelectedItem;
+            grid(temp.Id);
+        }
+
+        private void gvClaim_SelectionChanged(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow row  in gvClaim.SelectedRows)
+            {
+                claim(row.Cells[0].Value.ToString(), row.Cells[2].Value.ToString());
+                lblError.Text = row.Cells[1].Value.ToString();
+            }
+        }        
+        
         private void btnInsured_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void cbCoverValue_SelectionChangeCommitted(object sender, EventArgs e)
-        {
-            //var query = from cb in db.ProductTB
-            //            where cb.Id == pt.Id
-            //            select cb;
-            //gvClaim.DataSource = query.ToList();
-            grid((cbCoverValue.ValueMember));
         }
     }
 }

@@ -101,6 +101,10 @@
     <Compile Include="Migrations\202102090759049_naminguppeCase.Designer.cs">
       <DependentUpon>202102090759049_naminguppeCase.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202102091828258_ClaimTB.cs" />
+    <Compile Include="Migrations\202102091828258_ClaimTB.Designer.cs">
+      <DependentUpon>202102091828258_ClaimTB.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Insura_Context.cs" />
     <Compile Include="Forms\landing.cs">
@@ -191,6 +195,7 @@
       <DependentUpon>UC_Rv_Product.cs</DependentUpon>
     </Compile>
     <Compile Include="webApi\AdminTB.cs" />
+    <Compile Include="webApi\ClaimTB.cs" />
     <Compile Include="webApi\Class1.cs" />
     <Compile Include="webApi\ProductTB.cs" />
     <Compile Include="webApi\ClientTB.cs" />
@@ -234,6 +239,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202102090759049_naminguppeCase.resx">
       <DependentUpon>202102090759049_naminguppeCase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102091828258_ClaimTB.resx">
+      <DependentUpon>202102091828258_ClaimTB.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
