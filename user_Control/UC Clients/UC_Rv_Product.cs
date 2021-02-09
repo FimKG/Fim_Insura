@@ -33,7 +33,7 @@ namespace Fim_Insura.user_Control
         {
             using (Insura_Context db = new Insura_Context())
             {
-                var query = (from product in db.productTB
+                var query = (from product in db.ProductTB
                              select product).ToList();
 
                 dgvProdList.DataSource = query;

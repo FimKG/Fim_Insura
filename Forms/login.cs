@@ -43,7 +43,7 @@ namespace Fim_Insura
         {
             using (Insura_Context db = new Insura_Context())
             {
-                var query = from log in db.adminTB
+                var query = from log in db.AdminTB
                             where log.Email == txtUsername.Text && log.Password == txtPassword.Text
                             select log;
                 var admin = query.FirstOrDefault<AdminTB>();

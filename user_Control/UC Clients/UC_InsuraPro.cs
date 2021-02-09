@@ -50,23 +50,24 @@ namespace Fim_Insura.Forms
         private void btnInsured_Click(object sender, EventArgs e)
         {
 
-            if (cbCoverValue.SelectedValue != null && txtPolicyPeriod.Text != "" && txtProductName.Text != "")
+            if (cbCoverValue.SelectedIndex != null && txtPolicyPeriod.Text != "" && txtProductName.Text != "")
             {
             double coverValue = Convert.ToDouble(cbCoverValue.SelectedItem);
-            string total = (((((coverValue * 0.25) + coverValue) / 12) * double.Parse(txtPolicyPeriod.Text)).ToString()).ToString();
+            double total = ((coverValue * 0.25) + coverValue) / 12 * double.Parse(txtPolicyPeriod.Text);
             using (Insura_Context db = new Insura_Context())
             {
                 ProductTB productTB = new ProductTB()
                 {
+                    Id = Guid.NewGuid(),
                     CoverValue = (string)cbCoverValue.SelectedItem,
                     Period = txtPolicyPeriod.Text,
                     ProductName = txtProductName.Text,
-                    PremiumPrice = total,
+                    PremiumPrice = Math.Round(total, 2).ToString(),
                     AmendedOn = DateTime.Now,
                     CreatedOn = DateTime.Now
 
                 };
-                db.productTB.Add(productTB);
+                db.ProductTB.Add(productTB);
                 if (db.ChangeTracker.HasChanges())
                 {
                     db.SaveChanges();
@@ -83,7 +84,7 @@ namespace Fim_Insura.Forms
 
         private void UC_InsuraPro_Load(object sender, EventArgs e)
         {
-            cbCoverValue.SelectedItem = 0;
+            cbCoverValue.SelectedIndex = 0;
         }
     }
 }

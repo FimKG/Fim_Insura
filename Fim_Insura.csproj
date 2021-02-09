@@ -97,6 +97,10 @@
     <Compile Include="Migrations\202102071532336_producTable.Designer.cs">
       <DependentUpon>202102071532336_producTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202102090759049_naminguppeCase.cs" />
+    <Compile Include="Migrations\202102090759049_naminguppeCase.Designer.cs">
+      <DependentUpon>202102090759049_naminguppeCase.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Insura_Context.cs" />
     <Compile Include="Forms\landing.cs">
@@ -227,6 +231,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202102071532336_producTable.resx">
       <DependentUpon>202102071532336_producTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102090759049_naminguppeCase.resx">
+      <DependentUpon>202102090759049_naminguppeCase.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

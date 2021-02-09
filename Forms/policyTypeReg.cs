@@ -111,7 +111,7 @@ namespace Fim_Insura
                 //}
                 //else
                 //{
-                db.clientTB.Add(clienttb);
+                db.ClientTB.Add(clienttb);
                 if (db.ChangeTracker.HasChanges())
                 {
                     db.SaveChanges();
