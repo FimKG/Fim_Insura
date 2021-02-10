@@ -29,19 +29,10 @@ namespace Fim_Insura.user_Control.UC_Admin
         /// </summary>
         private void InitializeComponent()
         {
-            this.gvProdList = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
+            this.gvProdList = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.gvProdList)).BeginInit();
             this.SuspendLayout();
-            // 
-            // gvProdList
-            // 
-            this.gvProdList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvProdList.Location = new System.Drawing.Point(53, 140);
-            this.gvProdList.Name = "gvProdList";
-            this.gvProdList.RowTemplate.Height = 25;
-            this.gvProdList.Size = new System.Drawing.Size(477, 201);
-            this.gvProdList.TabIndex = 61;
             // 
             // label2
             // 
@@ -53,6 +44,15 @@ namespace Fim_Insura.user_Control.UC_Admin
             this.label2.Size = new System.Drawing.Size(180, 52);
             this.label2.TabIndex = 60;
             this.label2.Text = "Policies";
+            // 
+            // gvProdList
+            // 
+            this.gvProdList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvProdList.Location = new System.Drawing.Point(72, 141);
+            this.gvProdList.Name = "gvProdList";
+            this.gvProdList.RowTemplate.Height = 25;
+            this.gvProdList.Size = new System.Drawing.Size(413, 201);
+            this.gvProdList.TabIndex = 62;
             // 
             // UC_viewPolicy
             // 
@@ -69,8 +69,7 @@ namespace Fim_Insura.user_Control.UC_Admin
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView gvProdList;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridView gvProdList;
     }
 }
