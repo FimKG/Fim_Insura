@@ -38,6 +38,8 @@ namespace Fim_Insura.Forms
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbltotal = new System.Windows.Forms.Label();
             this.lblError = new System.Windows.Forms.Label();
+            this.lblLastName = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label2
@@ -141,10 +143,32 @@ namespace Fim_Insura.Forms
             this.lblError.Size = new System.Drawing.Size(0, 18);
             this.lblError.TabIndex = 42;
             // 
+            // lblLastName
+            // 
+            this.lblLastName.AutoSize = true;
+            this.lblLastName.Font = new System.Drawing.Font("Verdana", 9.75F);
+            this.lblLastName.Location = new System.Drawing.Point(347, 214);
+            this.lblLastName.Name = "lblLastName";
+            this.lblLastName.Size = new System.Drawing.Size(100, 16);
+            this.lblLastName.TabIndex = 43;
+            this.lblLastName.Text = "Product Name";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Verdana", 9.75F);
+            this.label1.Location = new System.Drawing.Point(347, 255);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(91, 16);
+            this.label1.TabIndex = 43;
+            this.label1.Text = "Policy Period";
+            // 
             // UC_InsuraPro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblLastName);
             this.Controls.Add(this.lblError);
             this.Controls.Add(this.lbltotal);
             this.Controls.Add(this.label2);
@@ -173,5 +197,7 @@ namespace Fim_Insura.Forms
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbltotal;
         private System.Windows.Forms.Label lblError;
+        private System.Windows.Forms.Label lblLastName;
+        private System.Windows.Forms.Label label1;
     }
 }

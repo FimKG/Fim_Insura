@@ -24,9 +24,9 @@ namespace Fim_Insura
             //Application.Run(new manage_Client());
             //Application.Run(new login());
             //Application.Run(new landing());
-            Application.Run(new client_Main());
+            //Application.Run(new client_Main());
             //Application.Run(new client_login());
-            //Application.Run(new admin_Main());
+            Application.Run(new admin_Main());
             //Application.Run(new InsureProduct());
         }
     }

@@ -27,34 +27,34 @@ namespace Fim_Insura
 
         private void txtnames_Click(object sender, EventArgs e)
         {
-            txtnames.Clear();
+            //txtnames.Clear();
             txtnames.ForeColor = Color.FromArgb(20, 155, 163);
             panel1.ForeColor = Color.FromArgb(20, 155, 163);
         }
 
         private void txtLastname_Click(object sender, EventArgs e)
         {
-            txtLastname.Clear();
+            //txtLastname.Clear();
             txtLastname.ForeColor = Color.FromArgb(20, 155, 163);
             panel2.ForeColor = Color.FromArgb(20, 155, 163);
         }
 
         private void txtEmail_Click(object sender, EventArgs e)
         {
-            txtEmail.Clear();
+            //txtEmail.Clear();
             txtEmail.ForeColor = Color.FromArgb(20, 155, 163);
             panel3.ForeColor = Color.FromArgb(20, 155, 163);
         }
         private void txtTelno_Click(object sender, EventArgs e)
         {
-            txtTelno.Clear();
+            //txtTelno.Clear();
             txtTelno.ForeColor = Color.FromArgb(20, 155, 163);
             panel4.ForeColor = Color.FromArgb(20, 155, 163);
         }
 
         private void txtPassword_Click(object sender, EventArgs e)
         {
-            txtPassword.Clear();
+            //txtPassword.Clear();
             txtPassword.ForeColor = Color.FromArgb(20, 155, 163);
             panel5.ForeColor = Color.FromArgb(20, 155, 163);
         }
