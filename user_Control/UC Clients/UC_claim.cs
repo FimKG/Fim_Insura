@@ -65,7 +65,7 @@ namespace Fim_Insura.user_Control
             if (db.ChangeTracker.HasChanges())
             {
                 db.SaveChanges();
-                lblError.Text = "Successfully registered";
+                lblError.Text = "Successfully Claimed";
             }
         }
         private void cbCoverValue_SelectionChangeCommitted(object sender, EventArgs e)

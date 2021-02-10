@@ -28,7 +28,22 @@ namespace Fim_Insura.user_Control
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            Insura_Context db = new Insura_Context();
+            using (Insura_Context db = new Insura_Context())
+            {
+                var query = from clients in db.ClientTB
+                            where clients.Id = txtnames.Text
+                            select clients
+                //ClientTB client = new ClientTB()
+                //{
+                //    Fname = txt
+                //}
+                db.ClientTB.Add(query);
+                if (db.ChangeTracker.HasChanges())
+                {
+                    db.SaveChanges();
+                    lblError.Text = "Successfully Updated";
+                }
+            }
         }
     }
 }

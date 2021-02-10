@@ -50,6 +50,7 @@ namespace Fim_Insura.user_Control
             this.lblCell = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lblBirthDate = new System.Windows.Forms.Label();
+            this.lblError = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label2
@@ -57,7 +58,7 @@ namespace Fim_Insura.user_Control
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Verdana", 32.25F);
-            this.label2.Location = new System.Drawing.Point(140, 27);
+            this.label2.Location = new System.Drawing.Point(140, 26);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(158, 52);
             this.label2.TabIndex = 58;
@@ -83,7 +84,7 @@ namespace Fim_Insura.user_Control
             this.DOB.CustomFormat = "";
             this.DOB.Font = new System.Drawing.Font("Verdana", 14.25F);
             this.DOB.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.DOB.Location = new System.Drawing.Point(147, 288);
+            this.DOB.Location = new System.Drawing.Point(147, 274);
             this.DOB.Name = "DOB";
             this.DOB.Size = new System.Drawing.Size(241, 31);
             this.DOB.TabIndex = 75;
@@ -91,7 +92,7 @@ namespace Fim_Insura.user_Control
             // lbltotal
             // 
             this.lbltotal.AutoSize = true;
-            this.lbltotal.Location = new System.Drawing.Point(132, 302);
+            this.lbltotal.Location = new System.Drawing.Point(132, 290);
             this.lbltotal.Name = "lbltotal";
             this.lbltotal.Size = new System.Drawing.Size(0, 13);
             this.lbltotal.TabIndex = 74;
@@ -99,7 +100,7 @@ namespace Fim_Insura.user_Control
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(46)))), ((int)(((byte)(15)))));
-            this.panel6.Location = new System.Drawing.Point(147, 319);
+            this.panel6.Location = new System.Drawing.Point(147, 307);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(240, 1);
             this.panel6.TabIndex = 65;
@@ -107,7 +108,7 @@ namespace Fim_Insura.user_Control
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(46)))), ((int)(((byte)(15)))));
-            this.panel4.Location = new System.Drawing.Point(148, 275);
+            this.panel4.Location = new System.Drawing.Point(148, 268);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(240, 1);
             this.panel4.TabIndex = 67;
@@ -115,7 +116,7 @@ namespace Fim_Insura.user_Control
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(46)))), ((int)(((byte)(15)))));
-            this.panel3.Location = new System.Drawing.Point(149, 173);
+            this.panel3.Location = new System.Drawing.Point(149, 171);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(240, 1);
             this.panel3.TabIndex = 68;
@@ -123,7 +124,7 @@ namespace Fim_Insura.user_Control
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(46)))), ((int)(((byte)(15)))));
-            this.panel2.Location = new System.Drawing.Point(148, 240);
+            this.panel2.Location = new System.Drawing.Point(148, 237);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(240, 1);
             this.panel2.TabIndex = 69;
@@ -149,7 +150,7 @@ namespace Fim_Insura.user_Control
             this.txtEmail.BackColor = System.Drawing.Color.White;
             this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtEmail.Font = new System.Drawing.Font("Verdana", 14.25F);
-            this.txtEmail.Location = new System.Drawing.Point(148, 250);
+            this.txtEmail.Location = new System.Drawing.Point(148, 243);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(240, 24);
             this.txtEmail.TabIndex = 61;
@@ -170,7 +171,7 @@ namespace Fim_Insura.user_Control
             this.txtCellNo.BackColor = System.Drawing.Color.White;
             this.txtCellNo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCellNo.Font = new System.Drawing.Font("Verdana", 14.25F);
-            this.txtCellNo.Location = new System.Drawing.Point(148, 215);
+            this.txtCellNo.Location = new System.Drawing.Point(148, 210);
             this.txtCellNo.Name = "txtCellNo";
             this.txtCellNo.Size = new System.Drawing.Size(240, 24);
             this.txtCellNo.TabIndex = 62;
@@ -180,7 +181,7 @@ namespace Fim_Insura.user_Control
             this.txtnames.BackColor = System.Drawing.Color.White;
             this.txtnames.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtnames.Font = new System.Drawing.Font("Verdana", 14.25F);
-            this.txtnames.Location = new System.Drawing.Point(149, 85);
+            this.txtnames.Location = new System.Drawing.Point(149, 84);
             this.txtnames.Name = "txtnames";
             this.txtnames.Size = new System.Drawing.Size(240, 24);
             this.txtnames.TabIndex = 63;
@@ -190,7 +191,7 @@ namespace Fim_Insura.user_Control
             this.txtLastName.BackColor = System.Drawing.Color.White;
             this.txtLastName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtLastName.Font = new System.Drawing.Font("Verdana", 14.25F);
-            this.txtLastName.Location = new System.Drawing.Point(149, 180);
+            this.txtLastName.Location = new System.Drawing.Point(149, 178);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(240, 24);
             this.txtLastName.TabIndex = 64;
@@ -199,7 +200,7 @@ namespace Fim_Insura.user_Control
             // 
             this.lblfName.AutoSize = true;
             this.lblfName.Font = new System.Drawing.Font("Verdana", 9.75F);
-            this.lblfName.Location = new System.Drawing.Point(36, 95);
+            this.lblfName.Location = new System.Drawing.Point(36, 94);
             this.lblfName.Name = "lblfName";
             this.lblfName.Size = new System.Drawing.Size(78, 16);
             this.lblfName.TabIndex = 76;
@@ -229,7 +230,7 @@ namespace Fim_Insura.user_Control
             // 
             this.lblCell.AutoSize = true;
             this.lblCell.Font = new System.Drawing.Font("Verdana", 9.75F);
-            this.lblCell.Location = new System.Drawing.Point(36, 229);
+            this.lblCell.Location = new System.Drawing.Point(36, 226);
             this.lblCell.Name = "lblCell";
             this.lblCell.Size = new System.Drawing.Size(71, 16);
             this.lblCell.TabIndex = 79;
@@ -239,7 +240,7 @@ namespace Fim_Insura.user_Control
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Verdana", 9.75F);
-            this.label1.Location = new System.Drawing.Point(36, 256);
+            this.label1.Location = new System.Drawing.Point(36, 249);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(41, 16);
             this.label1.TabIndex = 79;
@@ -249,16 +250,30 @@ namespace Fim_Insura.user_Control
             // 
             this.lblBirthDate.AutoSize = true;
             this.lblBirthDate.Font = new System.Drawing.Font("Verdana", 9.75F);
-            this.lblBirthDate.Location = new System.Drawing.Point(36, 299);
+            this.lblBirthDate.Location = new System.Drawing.Point(36, 287);
             this.lblBirthDate.Name = "lblBirthDate";
             this.lblBirthDate.Size = new System.Drawing.Size(94, 16);
             this.lblBirthDate.TabIndex = 80;
             this.lblBirthDate.Text = "Date Of Birth";
             // 
+            // lblError
+            // 
+            this.lblError.AutoSize = true;
+            this.lblError.BackColor = System.Drawing.Color.Transparent;
+            this.lblError.Font = new System.Drawing.Font("Verdana", 12F);
+            this.lblError.ForeColor = System.Drawing.Color.White;
+            this.lblError.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.lblError.Location = new System.Drawing.Point(163, 314);
+            this.lblError.Name = "lblError";
+            this.lblError.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblError.Size = new System.Drawing.Size(0, 18);
+            this.lblError.TabIndex = 81;
+            // 
             // UC_profile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lblError);
             this.Controls.Add(this.lblBirthDate);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblCell);
@@ -310,5 +325,6 @@ namespace Fim_Insura.user_Control
         private System.Windows.Forms.Label lblCell;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblBirthDate;
+        private System.Windows.Forms.Label lblError;
     }
 }
