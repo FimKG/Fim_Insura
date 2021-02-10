@@ -40,6 +40,8 @@ namespace Fim_Insura.Forms
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.lblClose = new System.Windows.Forms.Label();
             this.lblError = new System.Windows.Forms.Label();
+            this.lblfName = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -81,7 +83,7 @@ namespace Fim_Insura.Forms
             this.btnRegister.ForeColor = System.Drawing.Color.White;
             this.btnRegister.Location = new System.Drawing.Point(450, 180);
             this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(100, 29);
+            this.btnRegister.Size = new System.Drawing.Size(100, 40);
             this.btnRegister.TabIndex = 12;
             this.btnRegister.Text = "Register";
             this.btnRegister.UseVisualStyleBackColor = false;
@@ -94,7 +96,7 @@ namespace Fim_Insura.Forms
             this.btnLogin.ForeColor = System.Drawing.Color.White;
             this.btnLogin.Location = new System.Drawing.Point(315, 180);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(91, 29);
+            this.btnLogin.Size = new System.Drawing.Size(91, 40);
             this.btnLogin.TabIndex = 13;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
@@ -156,6 +158,30 @@ namespace Fim_Insura.Forms
             this.lblError.Size = new System.Drawing.Size(0, 18);
             this.lblError.TabIndex = 37;
             // 
+            // lblfName
+            // 
+            this.lblfName.AutoSize = true;
+            this.lblfName.BackColor = System.Drawing.Color.Transparent;
+            this.lblfName.Font = new System.Drawing.Font("Verdana", 9.75F);
+            this.lblfName.ForeColor = System.Drawing.Color.White;
+            this.lblfName.Location = new System.Drawing.Point(574, 88);
+            this.lblfName.Name = "lblfName";
+            this.lblfName.Size = new System.Drawing.Size(41, 16);
+            this.lblfName.TabIndex = 38;
+            this.lblfName.Text = "Email";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Verdana", 9.75F);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(574, 133);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(70, 16);
+            this.label1.TabIndex = 38;
+            this.label1.Text = "Password";
+            // 
             // client_login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -163,6 +189,8 @@ namespace Fim_Insura.Forms
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(686, 347);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblfName);
             this.Controls.Add(this.lblError);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel2);
@@ -196,5 +224,7 @@ namespace Fim_Insura.Forms
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.Label lblClose;
         private System.Windows.Forms.Label lblError;
+        private System.Windows.Forms.Label lblfName;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -27,57 +27,57 @@ namespace Fim_Insura
         private void txtnames_Click(object sender, EventArgs e)
         {
             //txtnames.Clear();
-            //txtnames.BackColor = Color.FromArgb(20, 155, 163);
-            //panel1.BackColor = Color.FromArgb(20, 155, 163);
-            lblfName.Text = "First Name";
+            txtnames.BackColor = Color.FromArgb(20, 155, 163);
+            panel1.BackColor = Color.FromArgb(20, 155, 163);
+            //lblfName.Text = "";
         }
 
         private void txtLastName_Click(object sender, EventArgs e)
         {
             //txtLastName.Clear();
-            //txtLastName.BackColor = Color.FromArgb(20, 155, 163);
-            //panel2.BackColor = Color.FromArgb(20, 155, 163);
+            txtLastname.BackColor = Color.FromArgb(20, 155, 163);
+            panel2.BackColor = Color.FromArgb(20, 155, 163);
             lblLastName.Text = "Last Name";
         }
 
         private void txtAddress_Click(object sender, EventArgs e)
         {
             //txtAddress.Clear();
-            //txtAddress.BackColor = Color.FromArgb(20, 155, 163);
-            //panel3.BackColor = Color.FromArgb(20, 155, 163);
-            lblAddress.Text = "Address";
+            txtAddress.BackColor = Color.FromArgb(20, 155, 163);
+            panel3.BackColor = Color.FromArgb(20, 155, 163);
+            //lblAddress.Text = "Address";
         }
 
         private void txtEmail_Click(object sender, EventArgs e)
         {
             //txtEmail.Clear();
-            //txtEmail.BackColor = Color.FromArgb(20, 155, 163);
-            //panel4.BackColor = Color.FromArgb(20, 155, 163);
-            lblEmail.Text = "Email";
+            txtEmail.BackColor = Color.FromArgb(20, 155, 163);
+            panel4.BackColor = Color.FromArgb(20, 155, 163);
+            //lblEmail.Text = "Email";
         }
 
         private void txtCell_Click(object sender, EventArgs e)
         {
             //txtCell.Clear();
-            //txtCell.BackColor = Color.FromArgb(20, 155, 163);
-            //panel5.BackColor = Color.FromArgb(20, 155, 163);
-            lblCell.Text = "Cellphone";
+            txtCell.BackColor = Color.FromArgb(20, 155, 163);
+            panel5.BackColor = Color.FromArgb(20, 155, 163);
+            //lblCell.Text = "Cellphone";
         }
 
         private void txtDateOfBirth_Click(object sender, EventArgs e)
         {
             //txtDateOfBirth.Clear();
-            //txtDateOfBirth.BackColor = Color.FromArgb(20, 155, 163);
-            //panel6.BackColor = Color.FromArgb(20, 155, 163);
-            lblBirthDate.Text = "Date Of Birth";
+            callDob.BackColor = Color.FromArgb(20, 155, 163);
+            panel6.BackColor = Color.FromArgb(20, 155, 163);
+            //lblBirthDate.Text = "Date Of Birth";
         }
 
         private void txtPolicyPeriod_Click(object sender, EventArgs e)
         {
             //txtPolicyPeriod.Clear();
-            //txtPolicyPeriod.BackColor = Color.FromArgb(20, 155, 163);
-            //panel7.BackColor = Color.FromArgb(20, 155, 163);
-            lblPolicy.Text = "PolicyPeriod";
+            txtPolicyPeriod.BackColor = Color.FromArgb(20, 155, 163);
+            panel7.BackColor = Color.FromArgb(20, 155, 163);
+            //lblPolicy.Text = "PolicyPeriod";
         }
 
         private void btnCalculatePolicy_Click(object sender, EventArgs e)
@@ -105,25 +105,15 @@ namespace Fim_Insura
                     CreatedOn = DateTime.Now
 
                 };
-                //if (db.adminTB.Find(admintb.Email) != null)
-                //{
-                //    lblError.Text = "Email Already taken";
-                //}
-                //else
-                //{
                 db.ClientTB.Add(clienttb);
                 if (db.ChangeTracker.HasChanges())
                 {
                     db.SaveChanges();
                     lblError.Text = "Successfully registered";
-                }
-
-                //}            
+                }       
                 this.Hide();
                 logPolicy.Show();
             }
-
-            
         }
     }
 }

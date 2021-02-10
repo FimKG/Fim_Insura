@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Fim_Insura.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,6 +25,23 @@ namespace Fim_Insura.user_Control.UC_Admin
                 if (_instance == null)
                     _instance = new UC_viewClients();
                 return _instance;
+            }
+        }
+
+        private void UC_viewClients_Load(object sender, EventArgs e)
+        {
+            using (Insura_Context db = new Insura_Context())
+            {
+                var query = (from clients in db.ClientTB
+                             select new {
+                                 clients.Fname,
+                                 clients.Lname,
+                                 clients.Email,
+                                 clients.Cellphone,
+                                 clients.DOB
+                             }).ToList();
+
+                gvClientList.DataSource = query;
             }
         }
     }

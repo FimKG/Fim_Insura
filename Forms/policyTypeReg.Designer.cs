@@ -64,6 +64,7 @@ namespace Fim_Insura
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.lblError = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel_footer.SuspendLayout();
             this.panel_header.SuspendLayout();
             this.SuspendLayout();
@@ -132,7 +133,7 @@ namespace Fim_Insura
             this.btnCalculatePolicy.ForeColor = System.Drawing.Color.White;
             this.btnCalculatePolicy.Location = new System.Drawing.Point(219, 422);
             this.btnCalculatePolicy.Name = "btnCalculatePolicy";
-            this.btnCalculatePolicy.Size = new System.Drawing.Size(117, 29);
+            this.btnCalculatePolicy.Size = new System.Drawing.Size(117, 40);
             this.btnCalculatePolicy.TabIndex = 28;
             this.btnCalculatePolicy.Text = "Calculate";
             this.btnCalculatePolicy.UseVisualStyleBackColor = false;
@@ -145,7 +146,7 @@ namespace Fim_Insura
             this.btnLogPolicy.ForeColor = System.Drawing.Color.White;
             this.btnLogPolicy.Location = new System.Drawing.Point(414, 422);
             this.btnLogPolicy.Name = "btnLogPolicy";
-            this.btnLogPolicy.Size = new System.Drawing.Size(118, 29);
+            this.btnLogPolicy.Size = new System.Drawing.Size(118, 40);
             this.btnLogPolicy.TabIndex = 29;
             this.btnLogPolicy.Text = "Log Policy";
             this.btnLogPolicy.UseVisualStyleBackColor = false;
@@ -296,19 +297,21 @@ namespace Fim_Insura
             // 
             this.lblfName.AutoSize = true;
             this.lblfName.Font = new System.Drawing.Font("Verdana", 9.75F);
-            this.lblfName.Location = new System.Drawing.Point(24, 211);
+            this.lblfName.Location = new System.Drawing.Point(19, 211);
             this.lblfName.Name = "lblfName";
-            this.lblfName.Size = new System.Drawing.Size(0, 16);
+            this.lblfName.Size = new System.Drawing.Size(78, 16);
             this.lblfName.TabIndex = 31;
+            this.lblfName.Text = "First Name";
             // 
             // lblAddress
             // 
             this.lblAddress.AutoSize = true;
             this.lblAddress.Font = new System.Drawing.Font("Verdana", 9.75F);
-            this.lblAddress.Location = new System.Drawing.Point(24, 242);
+            this.lblAddress.Location = new System.Drawing.Point(19, 242);
             this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(0, 16);
+            this.lblAddress.Size = new System.Drawing.Size(60, 16);
             this.lblAddress.TabIndex = 31;
+            this.lblAddress.Text = "Address";
             // 
             // lblCell
             // 
@@ -316,17 +319,19 @@ namespace Fim_Insura
             this.lblCell.Font = new System.Drawing.Font("Verdana", 9.75F);
             this.lblCell.Location = new System.Drawing.Point(703, 310);
             this.lblCell.Name = "lblCell";
-            this.lblCell.Size = new System.Drawing.Size(0, 16);
+            this.lblCell.Size = new System.Drawing.Size(71, 16);
             this.lblCell.TabIndex = 31;
+            this.lblCell.Text = "Cellphone";
             // 
             // lblPolicy
             // 
             this.lblPolicy.AutoSize = true;
             this.lblPolicy.Font = new System.Drawing.Font("Verdana", 9.75F);
-            this.lblPolicy.Location = new System.Drawing.Point(24, 310);
+            this.lblPolicy.Location = new System.Drawing.Point(19, 310);
             this.lblPolicy.Name = "lblPolicy";
-            this.lblPolicy.Size = new System.Drawing.Size(0, 16);
+            this.lblPolicy.Size = new System.Drawing.Size(91, 16);
             this.lblPolicy.TabIndex = 31;
+            this.lblPolicy.Text = "Policy Period";
             // 
             // lblLastName
             // 
@@ -334,8 +339,9 @@ namespace Fim_Insura
             this.lblLastName.Font = new System.Drawing.Font("Verdana", 9.75F);
             this.lblLastName.Location = new System.Drawing.Point(703, 211);
             this.lblLastName.Name = "lblLastName";
-            this.lblLastName.Size = new System.Drawing.Size(0, 16);
+            this.lblLastName.Size = new System.Drawing.Size(77, 16);
             this.lblLastName.TabIndex = 31;
+            this.lblLastName.Text = "Last Name";
             // 
             // lblEmail
             // 
@@ -343,8 +349,9 @@ namespace Fim_Insura
             this.lblEmail.Font = new System.Drawing.Font("Verdana", 9.75F);
             this.lblEmail.Location = new System.Drawing.Point(703, 242);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(0, 16);
+            this.lblEmail.Size = new System.Drawing.Size(41, 16);
             this.lblEmail.TabIndex = 31;
+            this.lblEmail.Text = "Email";
             // 
             // lblBirthDate
             // 
@@ -352,8 +359,9 @@ namespace Fim_Insura
             this.lblBirthDate.Font = new System.Drawing.Font("Verdana", 9.75F);
             this.lblBirthDate.Location = new System.Drawing.Point(703, 273);
             this.lblBirthDate.Name = "lblBirthDate";
-            this.lblBirthDate.Size = new System.Drawing.Size(0, 16);
+            this.lblBirthDate.Size = new System.Drawing.Size(94, 16);
             this.lblBirthDate.TabIndex = 31;
+            this.lblBirthDate.Text = "Date Of Birth";
             // 
             // lbltotal
             // 
@@ -418,6 +426,16 @@ namespace Fim_Insura
             this.lblError.Size = new System.Drawing.Size(0, 18);
             this.lblError.TabIndex = 35;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Verdana", 9.75F);
+            this.label3.Location = new System.Drawing.Point(551, 354);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(70, 16);
+            this.label3.TabIndex = 31;
+            this.label3.Text = "Password";
+            // 
             // policyTypeReg
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -431,6 +449,7 @@ namespace Fim_Insura
             this.Controls.Add(this.lbltotal);
             this.Controls.Add(this.lblPolicy);
             this.Controls.Add(this.lblBirthDate);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.lblCell);
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.lblAddress);
@@ -506,5 +525,6 @@ namespace Fim_Insura
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label lblError;
+        private System.Windows.Forms.Label label3;
     }
 }
