@@ -17,7 +17,7 @@ namespace Fim_Insura
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new splash());
+            Application.Run(new splash());
             //Application.Run(new register());
             //Application.Run(new policyTypeReg());
             //Application.Run(new myPolicy());
@@ -26,7 +26,7 @@ namespace Fim_Insura
             //Application.Run(new landing());
             //Application.Run(new client_Main());
             //Application.Run(new client_login());
-            Application.Run(new admin_Main());
+            //Application.Run(new admin_Main());
             //Application.Run(new InsureProduct());
         }
     }
